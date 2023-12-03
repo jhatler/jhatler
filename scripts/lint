@@ -1,0 +1,48 @@
+#!/usr/bin/env bash
+
+set -e
+
+# Initialize variables
+_DEBUG=false
+_WORKSPACE="$(git rev-parse --show-toplevel)"
+
+# Provide a usage message on stderr and exit
+function usage() {
+    echo "Usage: $0 [--debug|-d] [--workspace|-w <path>]" >&2
+    exit 1
+}
+
+# Runs super-linter via docker
+function run_linter() {
+    docker run --rm \
+        -w /tmp/lint \
+        -e ACTIONS_RUNNER_DEBUG="$_DEBUG" \
+        -e CREATE_LOG_FILE="$_DEBUG" \
+        -e RUN_LOCAL=true \
+        -e USE_FIND_ALGORITHM=true \
+        --env-file "$_WORKSPACE"/.github/super-linter.env \
+        -v "$_WORKSPACE":/tmp/lint ghcr.io/super-linter/super-linter:v5.7.2
+}
+
+# Parse arguments
+while test $# != 0; do
+    case "$1" in
+        --debug | -d)
+            _DEBUG=true
+            ;;
+        --workspace | -w)
+            shift
+            _WORKSPACE="$1"
+            ;;
+        --)
+            shift
+            break
+            ;;
+        *)
+            usage
+            ;;
+    esac
+    shift
+done
+
+run_linter
