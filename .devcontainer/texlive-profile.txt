@@ -1,0 +1,7 @@
+selected_scheme scheme-basic
+instopt_letter 1
+tlpdbopt_autobackup 0
+tlpdbopt_desktop_integration 0
+tlpdbopt_file_assocs 0
+tlpdbopt_install_docfiles 1
+tlpdbopt_install_srcfiles 1

@@ -26,6 +26,10 @@
         ".": {
             "release-type": "simple",
             "package-name": "jhatler"
+        },
+        ".devcontainer": {
+            "release-type": "simple",
+            "package-name": "devcontainer"
         }
     }
 }

@@ -1,0 +1,94 @@
+{
+    "build": {
+        "context": ".",
+        "dockerfile": "Dockerfile"
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/sshd:1": {
+            "version": "latest"
+        },
+        "ghcr.io/devcontainers/features/github-cli:1": {
+            "version": "latest"
+        },
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {
+            "version": "latest"
+        },
+        "ghcr.io/devcontainers/features/python:1": {
+            "version": "latest"
+        },
+        "ghcr.io/devcontainers/features/node:1": {
+            "version": "20"
+        },
+        "ghcr.io/devcontainers/features/go:1": {
+            "version": "latest"
+        },
+        "./local-features/liquidprompt": "latest",
+        "./local-features/devcontainers": "latest",
+        "./local-features/shfmt": "latest"
+    },
+    "overrideFeatureInstallOrder": [
+        "ghcr.io/devcontainers/features/sshd",
+        "ghcr.io/devcontainers/features/github-cli",
+        "ghcr.io/devcontainers/features/docker-in-docker",
+        "ghcr.io/devcontainers/features/python",
+        "ghcr.io/devcontainers/features/node",
+        "ghcr.io/devcontainers/features/go",
+        "./local-features/liquidprompt",
+        "./local-features/devcontainers",
+        "./local-features/shfmt"
+    ],
+    "remoteUser": "vscode",
+    "containerUser": "vscode",
+    "postCreateCommand": "${containerWorkspaceFolder}/.devcontainer/postCreateCommand.sh",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "go.toolsManagement.checkForUpdates": "local",
+                "go.useLanguageServer": true,
+                "go.gopath": "/go",
+                "latex-workshop.linting.chktex.enabled": true,
+                "latex-workshop.linting.chktex.exec.path": "chktex",
+                "latex-workshop.latex.clean.subfolder.enabled": true,
+                "latex-workshop.latex.autoClean.run": "onBuilt",
+                "editor.formatOnSave": true,
+                "files.associations": {
+                    "*.tex": "latex"
+                },
+                "latex-workshop.latexindent.path": "latexindent",
+                "latex-workshop.latexindent.args": [
+                    "-c",
+                    "%DIR%/",
+                    "%TMPFILE%",
+                    "-y=defaultIndent: '%INDENT%'"
+                ],
+                "python.defaultInterpreterPath": "/usr/local/bin/python",
+                "python.formatting.autopep8Path": "/usr/local/py-utils/bin/autopep8",
+                "python.formatting.blackPath": "/usr/local/py-utils/bin/black",
+                "python.linting.flake8Path": "/usr/local/py-utils/bin/flake8",
+                "python.linting.flake8Enabled": false,
+                "python.linting.mypyPath": "/usr/local/py-utils/bin/mypy",
+                "python.linting.mypyEnabled": false,
+                "python.linting.pylintPath": "/usr/local/py-utils/bin/pylint",
+                "python.linting.pylintEnabled": false
+            },
+            "extensions": [
+                "eamodio.gitlens",
+                "EditorConfig.EditorConfig",
+                "GitHub.copilot",
+                "GitHub.vscode-github-actions",
+                "GitHub.vscode-pull-request-github",
+                "james-yu.latex-workshop",
+                "mads-hartmann.bash-ide-vscode",
+                "ms-azuretools.vscode-docker",
+                "ms-python.python",
+                "ms-vscode-remote.remote-containers",
+                "ms-vscode-remote.remote-ssh",
+                "MS-vsliveshare.vsliveshare",
+                "streetsidesoftware.code-spell-checker",
+                "tecosaur.latex-utilities",
+                "valentjn.vscode-ltex",
+                "yzhang.markdown-all-in-one"
+            ]
+        }
+    }
+}
