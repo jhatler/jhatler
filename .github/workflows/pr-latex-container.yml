@@ -1,0 +1,35 @@
+---
+name: PR Checks for LaTeX Container
+on:
+  pull_request:
+    paths:
+      - 'containers/latex/**'
+
+concurrency:
+  # For pull requests, cancel all currently-running jobs for this workflow
+  # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#concurrency
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build LaTeX Container
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Set short git commit SHA
+        id: git
+        shell: bash
+        run: echo "short_sha=$(git rev-parse --short ${{ github.sha }})" >> "$GITHUB_OUTPUT"
+
+      - name: Build Container
+        uses: ./.github/actions/container
+        with:
+          context: "{{defaultContext}}:containers/latex"
+          push: false
+          tags: |
+            ghcr.io/jhatler/latex:${{ steps.git.outputs.short_sha }}
