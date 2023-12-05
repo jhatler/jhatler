@@ -1,0 +1,7 @@
+{
+    "id": "shfmt",
+    "name": "shfmt",
+	"installsAfter": [
+		"ghcr.io/devcontainers/features/go"
+	]
+}

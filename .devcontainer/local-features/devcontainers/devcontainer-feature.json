@@ -1,0 +1,7 @@
+{
+    "id": "devcontainers",
+    "name": "devcontainers",
+	"installsAfter": [
+		"ghcr.io/devcontainers/features/node"
+	]
+}
