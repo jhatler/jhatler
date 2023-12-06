@@ -6,3 +6,5 @@
 ### Features
 
 * Cache (dev)container builds ([#22](https://github.com/jhatler/jhatler/issues/22)) ([5001444](https://github.com/jhatler/jhatler/commit/5001444df95c797da5baae722922c271c751ea7d)), closes [#19](https://github.com/jhatler/jhatler/issues/19)
+
+<!--- @generated --->

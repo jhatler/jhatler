@@ -20,3 +20,5 @@
 
 * Disable linked-versions in release-please ([#28](https://github.com/jhatler/jhatler/issues/28)) ([4d8888b](https://github.com/jhatler/jhatler/commit/4d8888b0f1add6e5ff6d6582d7954892063aae31)), closes [#27](https://github.com/jhatler/jhatler/issues/27)
 * Disable node-workspace in release-please ([#26](https://github.com/jhatler/jhatler/issues/26)) ([b1bac0f](https://github.com/jhatler/jhatler/commit/b1bac0fb33209054973016a6e2e96ee77b03d6be)), closes [#25](https://github.com/jhatler/jhatler/issues/25)
+
+<!--- @generated --->
