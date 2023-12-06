@@ -39,15 +39,15 @@
         ".devcontainer": {
             "release-type": "simple",
             "package-name": "devcontainer",
-            "component": "devcontainer"
+            "component": "devcontainer",
+            "extra-files": [
+                "Dockerfile"
+            ]
         },
         "containers/latex": {
             "release-type": "simple",
             "package-name": "container-latex",
-            "component": "container-latex",
-            "extra-files": [
-                ".devcontainer/Dockerfile"
-            ]
+            "component": "container-latex"
         }
     }
 }
