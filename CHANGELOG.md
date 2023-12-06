@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.0.2](https://github.com/jhatler/jhatler/compare/jhatler-v0.0.1...jhatler-v0.0.2) (2023-12-06)
+
+
+### Bug Fixes
+
+* Disable linked-versions internal merge ([#40](https://github.com/jhatler/jhatler/issues/40)) ([c1b3230](https://github.com/jhatler/jhatler/commit/c1b3230c90e663abba08d1aee1fd25024cfeaf92)), closes [#39](https://github.com/jhatler/jhatler/issues/39)
+* Ignore CHANGELOGs in PRs and container builds ([#36](https://github.com/jhatler/jhatler/issues/36)) ([3617e5b](https://github.com/jhatler/jhatler/commit/3617e5b2a049a5916b759b8760e7a42f9849101b)), closes [#35](https://github.com/jhatler/jhatler/issues/35)
+* Mark CHANGELOG files as generated ([#34](https://github.com/jhatler/jhatler/issues/34)) ([5657d70](https://github.com/jhatler/jhatler/commit/5657d706e67ed63393ba4cc8be2d8617c12d62a3)), closes [#33](https://github.com/jhatler/jhatler/issues/33)
+* Move extra-files to .devcontainer component ([#41](https://github.com/jhatler/jhatler/issues/41)) ([c0a9fc7](https://github.com/jhatler/jhatler/commit/c0a9fc7ece05816bd6b1a147bb75e6e9384fdbcd)), closes [#30](https://github.com/jhatler/jhatler/issues/30)
+* Resolve devcontainer publishing issues ([#42](https://github.com/jhatler/jhatler/issues/42)) ([ece5fd2](https://github.com/jhatler/jhatler/commit/ece5fd20ff9c3209fbe936d49f4e407e351c7f04)), closes [#31](https://github.com/jhatler/jhatler/issues/31)
+
+
+### Reverts
+
+* Enable linked-versions in release-please ([#38](https://github.com/jhatler/jhatler/issues/38)) ([402637d](https://github.com/jhatler/jhatler/commit/402637d2e00834aa6535a514642a419de62a494b))
+
 ## [0.0.1](https://github.com/jhatler/jhatler/compare/jhatler-v0.0.0...jhatler-v0.0.1) (2023-12-06)
 
 

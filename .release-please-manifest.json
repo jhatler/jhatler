@@ -1,5 +1,5 @@
 {
-  ".": "0.0.1",
-  ".devcontainer": "0.0.1",
-  "containers/latex": "0.0.1"
+  ".": "0.0.2",
+  ".devcontainer": "0.0.2",
+  "containers/latex": "0.0.2"
 }
