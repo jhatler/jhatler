@@ -1,6 +1,14 @@
 {
     "plugins": [
-        "sentence-case"
+        "sentence-case",
+        {
+            "type": "linked-versions",
+            "group-name": "devenv",
+            "components": [
+                "devcontainer",
+                "container-latex"
+            ]
+        }
     ],
     "bump-minor-pre-major": true,
     "bump-patch-for-minor-pre-major": true,
@@ -24,15 +32,18 @@
     "packages": {
         ".": {
             "release-type": "simple",
-            "package-name": "jhatler"
+            "package-name": "jhatler",
+            "component": "jhatler"
         },
         ".devcontainer": {
             "release-type": "simple",
-            "package-name": "devcontainer"
+            "package-name": "devcontainer",
+            "component": "devcontainer"
         },
         "containers/latex": {
             "release-type": "simple",
             "package-name": "container-latex",
+            "component": "container-latex",
             "extra-files": [
                 ".devcontainer/Dockerfile"
             ]
