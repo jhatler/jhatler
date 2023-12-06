@@ -1,7 +1,6 @@
 {
     "plugins": [
         "sentence-case",
-        "node-workspace",
         {
             "type": "linked-versions",
             "group-name": "devenv",
