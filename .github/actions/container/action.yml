@@ -1,0 +1,35 @@
+name: 'Container Build and Push'
+description: 'Setup Docker, Build Container, Optionally Push Image'
+
+inputs:
+  context:
+    description: 'Docker Build Context'
+    required: true
+  platforms:
+    description: 'Platforms to Build'
+    required: true
+    default: 'linux/amd64'
+  push:
+    description: 'Push images?'
+    required: true
+    default: false
+  tags:
+    description: 'Tags to add to image'
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    - name: Set up QEMU
+      uses: docker/setup-qemu-action@v3
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v3
+
+    - name: Build container
+      uses: docker/build-push-action@v5
+      with:
+        context: ${{ inputs.context }}
+        push: ${{ inputs.push }}
+        platforms: ${{ inputs.platforms }}
+        tags: ${{ inputs.tags }}

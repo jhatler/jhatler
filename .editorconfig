@@ -51,3 +51,7 @@ switch_case_indent = true
 space_redirects = false
 keep_padding = false
 function_next_line = false
+
+# github workflow files
+[.github/workflows/*.yml]
+max_line_length = unset

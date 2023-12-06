@@ -1,4 +1,5 @@
 {
   ".": "0.0.0",
-  ".devcontainer": "0.0.0"
+  ".devcontainer": "0.0.0",
+  "containers/latex": "0.0.0"
 }

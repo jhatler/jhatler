@@ -9,6 +9,7 @@ permissions:
   contents: write
   pull-requests: write
   id-token: write
+  packages: write
 
 jobs:
   release-please:
@@ -24,9 +25,39 @@ jobs:
       - name: Checkout
         if: ${{ steps.release.outputs.releases_created }}
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - name: Set short git commit SHA
         if: ${{ steps.release.outputs.releases_created }}
         id: git
         shell: bash
         run: echo "short_sha=$(git rev-parse --short ${{ github.sha }})" >> "$GITHUB_OUTPUT"
+
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v3
+        if: ${{ steps.release.outputs['.devcontainer--release_created'] || steps.release.outputs['containers/latex--release_created'] }}
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish LaTeX Container
+        if: ${{ steps.release.outputs['containers/latex--release_created'] }}
+        uses: ./.github/actions/container
+        with:
+          context: "{{defaultContext}}:containers/latex"
+          push: true
+          tags: |
+            ghcr.io/jhatler/latex:${{ steps.git.outputs.short_sha }}
+            ghcr.io/jhatler/latex:v${{ steps.release.outputs['containers/latex--major'] }}.${{ steps.release.outputs['containers/latex--minor'] }}.${{ steps.release.outputs['containers/latex--patch'] }}
+            ghcr.io/jhatler/latex:latest
+
+      - name: Publish Devcontainer
+        if: ${{ steps.release.outputs['.devcontainer--release_created'] || steps.release.outputs['containers/latex--release_created'] }}
+        uses: devcontainers/ci@v0.3
+        with:
+          imageName: ghcr.io/jhatler/jhatler-devcontainer
+          imageTag: latest,${{ steps.git.outputs.short_sha }},v${{ steps.release.outputs['.devcontainer--major'] }}.${{ steps.release.outputs['.devcontainer--minor'] }}.${{ steps.release.outputs['.devcontainer--patch'] }}
+          cacheFrom: ghcr.io/jhatler/jhatler-devcontainer
+          push: always
