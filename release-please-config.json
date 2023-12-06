@@ -7,7 +7,8 @@
             "components": [
                 "devcontainer",
                 "container-latex"
-            ]
+            ],
+            "merge": false
         }
     ],
     "bump-minor-pre-major": true,
