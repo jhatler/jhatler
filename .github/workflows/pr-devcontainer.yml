@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - '.devcontainer/**'
+      - '!.devcontainer/CHANGELOG.md'
 
 concurrency:
   # For pull requests, cancel all currently-running jobs for this workflow

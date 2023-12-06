@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - 'containers/latex/**'
+      - '!containers/latex/CHANGELOG.md'
 
 concurrency:
   # For pull requests, cancel all currently-running jobs for this workflow
