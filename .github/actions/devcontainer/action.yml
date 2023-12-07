@@ -1,4 +1,4 @@
-name: 'Devconatiner Semver Publisher'
+name: 'Devcontainer Semver Publisher'
 description: |
   Sets up Docker and the Devcontainer CLI. Then builds the specified
   devcontainer configuration. Requires registry credentials for usage
@@ -69,19 +69,13 @@ runs:
       shell: bash
       run: echo "short_sha=$(git rev-parse --short ${{ github.sha }})" >> "$GITHUB_OUTPUT"
 
-    - name: Build devcontainer
-      if: ${{ inputs.push == 'false' }}
+    - name: Set devcontainer UUID
+      id: uuid
       shell: bash
-      run: |
-        devcontainer build \
-          --workspace-folder ${{ inputs.workspace }} \
-          --cache-from ${{ inputs.repository }} \
-          --platform ${{ inputs.platforms }} \
-          --image-name ${{ inputs.repository }}:latest \
-          --image-name ${{ inputs.repository }}:${{ steps.git.outputs.short_sha }}
+      run: echo "uuid=$(uuidgen -s -n @url -N ${{ inputs.repository }}:${{ steps.git.outputs.short_sha }})" >> "$GITHUB_OUTPUT"
 
-    - name: Build and Push devcontainer
-      if: ${{ inputs.push == 'true' }}
+    - name: Build devcontainer
+      id: build
       shell: bash
       run: |
         devcontainer build \
@@ -89,9 +83,34 @@ runs:
           --cache-from ${{ inputs.repository }} \
           --cache-to type=inline \
           --platform ${{ inputs.platforms }} \
-          --image-name ${{ inputs.repository }}:latest \
-          --image-name ${{ inputs.repository }}:${{ steps.git.outputs.short_sha }} \
-          --image-name ${{ inputs.repository }}:v${{ inputs.semver_major }}.${{ inputs.semver_minor }}.${{ inputs.semver_patch }} \
-          --image-name ${{ inputs.repository }}:v${{ inputs.semver_major }}.${{ inputs.semver_minor }} \
-          --image-name ${{ inputs.repository }}:v${{ inputs.semver_major }} \
-          --push
+          --output type=docker,dest=${{ runner.temp }}/${{ steps.uuid.outputs.uuid }}.tar \
+          | tee ${{ runner.temp }}/${{ steps.uuid.outputs.uuid }}.stdout
+
+        echo "image_name=$(cat ${{ runner.temp }}/${{ steps.uuid.outputs.uuid }}.stdout \
+          | jq -r .imageName[0])" >> "$GITHUB_OUTPUT"
+
+    - name: Load devcontainer
+      if: ${{ inputs.push == 'true' }}
+      shell: bash
+      run: |
+        docker load -i ${{ runner.temp }}/${{ steps.uuid.outputs.uuid }}.tar
+
+    - name: Tag devcontainer
+      if: ${{ inputs.push == 'true' }}
+      shell: bash
+      run: |
+        docker tag ${{ steps.build.outputs.image_name }} ${{ inputs.repository }}:latest
+        docker tag ${{ steps.build.outputs.image_name }} ${{ inputs.repository }}:${{ steps.git.outputs.short_sha }}
+        docker tag ${{ steps.build.outputs.image_name }} ${{ inputs.repository }}:v${{ inputs.semver_major }}.${{ inputs.semver_minor }}.${{ inputs.semver_patch }}
+        docker tag ${{ steps.build.outputs.image_name }} ${{ inputs.repository }}:v${{ inputs.semver_major }}.${{ inputs.semver_minor }}
+        docker tag ${{ steps.build.outputs.image_name }} ${{ inputs.repository }}:v${{ inputs.semver_major }}
+
+    - name: Push devcontainer
+      if: ${{ inputs.push == 'true' }}
+      shell: bash
+      run: |
+        docker push ${{ inputs.repository }}:latest
+        docker push ${{ inputs.repository }}:${{ steps.git.outputs.short_sha }}
+        docker push ${{ inputs.repository }}:v${{ inputs.semver_major }}.${{ inputs.semver_minor }}.${{ inputs.semver_patch }}
+        docker push ${{ inputs.repository }}:v${{ inputs.semver_major }}.${{ inputs.semver_minor }}
+        docker push ${{ inputs.repository }}:v${{ inputs.semver_major }}
