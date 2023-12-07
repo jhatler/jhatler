@@ -1,5 +1,8 @@
-name: 'Container Build and Push'
-description: 'Setup Docker, Build Container, Optionally Push Image'
+name: 'Docker Semver Publisher'
+description: |
+  Sets up Docker and Builds the specified Container. Requires registry
+  credentials for usage in order to leverage caching.
+  Can optionally push image with Semver and SHA Tags
 
 inputs:
   context:
@@ -13,8 +16,26 @@ inputs:
     description: 'Push images?'
     required: true
     default: false
-  tags:
-    description: 'Tags to add to image'
+  repository:
+    description: 'Image Repository to use for caching and pushing'
+    required: true
+  semver_major:
+    description: 'Major version to use for pushed semver tags'
+    required: false
+  semver_minor:
+    description: 'Minor version to use for pushed semver tags'
+    required: false
+  semver_patch:
+    description: 'Patch version to use for pushed semver tags'
+    required: false
+  registry:
+    description: 'OCI Registry to use for caching and pushing'
+    required: true
+  username:
+    description: 'OCI Registry Username'
+    required: true
+  password:
+    description: 'OCI Registry Password'
     required: true
 
 runs:
@@ -26,10 +47,50 @@ runs:
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v3
 
-    - name: Build container
-      uses: docker/build-push-action@v5
+    - name: Login to Container Registry
+      uses: docker/login-action@v3
       with:
+        registry: ${{ inputs.registry }}
+        username: ${{ inputs.username }}
+        password: ${{ inputs.password }}
+
+    - name: Set short git commit SHA
+      id: git
+      shell: bash
+      run: echo "short_sha=$(git rev-parse --short ${{ github.sha }})" >> "$GITHUB_OUTPUT"
+
+    - name: Build container
+      if: ${{ !inputs.push }}
+      uses: docker/build-push-action@v5
+      env:
+        DOCKER_BUILDKIT: 1
+        BUILDKIT_INLINE_CACHE: 1
+      with:
+        cache-from: type=registry,ref=${{ inputs.repository }}
         context: ${{ inputs.context }}
-        push: ${{ inputs.push }}
+        load: true
         platforms: ${{ inputs.platforms }}
-        tags: ${{ inputs.tags }}
+        push: ${{ inputs.push }}
+        tags: |
+          ${{ inputs.repository }}:latest
+          ${{ inputs.repository }}:${{ steps.git.outputs.short_sha }}
+
+    - name: Build and Push container
+      if: ${{ inputs.push }}
+      uses: docker/build-push-action@v5
+      env:
+        DOCKER_BUILDKIT: 1
+        BUILDKIT_INLINE_CACHE: 1
+      with:
+        cache-from: type=registry,ref=${{ inputs.repository }}
+        cache-to: type=inline
+        context: ${{ inputs.context }}
+        load: true
+        platforms: ${{ inputs.platforms }}
+        push: ${{ inputs.push }}
+        tags: |
+          ${{ inputs.repository }}:latest
+          ${{ inputs.repository }}:${{ steps.git.outputs.short_sha }}
+          ${{ inputs.repository }}:v${{ inputs.semver_major }}.${{ inputs.semver_minor }}.${{ inputs.semver_patch }}
+          ${{ inputs.repository }}:v${{ inputs.semver_major }}.${{ inputs.semver_minor }}
+          ${{ inputs.repository }}:v${{ inputs.semver_major }}
