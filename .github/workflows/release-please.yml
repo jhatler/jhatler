@@ -55,11 +55,12 @@ jobs:
 
       - name: Publish Devcontainer
         if: ${{ steps.release.outputs['.devcontainer--release_created'] || steps.release.outputs['containers/latex--release_created'] }}
-        uses: devcontainers/ci@v0.3.1900000338
-        env:
-          BUILDX_NO_DEFAULT_ATTESTATIONS: true
-        with:
-          imageName: ghcr.io/jhatler/jhatler-devcontainer
-          imageTag: ${{ steps.git.outputs.short_sha }},v${{ steps.release.outputs['.devcontainer--major'] }}.${{ steps.release.outputs['.devcontainer--minor'] }}.${{ steps.release.outputs['.devcontainer--patch'] }}
-          cacheFrom: ghcr.io/jhatler/jhatler-devcontainer
-          push: always
+        shell: bash
+        run: |
+          devcontainer build \
+            --workspace-folder ${{ github.workspace }} \
+            --cache-from ghcr.io/jhatler/jhatler-devcontainer \
+            --image-name ghcr.io/jhatler/jhatler-devcontainer:latest \
+            --image-name ghcr.io/jhatler/jhatler-devcontainer:${{ steps.git.outputs.short_sha }} \
+            --image-name ghcr.io/jhatler/jhatler-devcontainer:v${{ steps.release.outputs['.devcontainer--major'] }}.${{ steps.release.outputs['.devcontainer--minor'] }}.${{ steps.release.outputs['.devcontainer--patch'] }} \
+            --push
