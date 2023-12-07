@@ -1,4 +1,4 @@
-# Changelog
+# LaTeX Devcontainer Changelog
 
 ## [0.0.3](https://github.com/jhatler/jhatler/compare/devcontainer-latex-v0.0.2...devcontainer-latex-v0.0.3) (2023-12-07)
 
