@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.3](https://github.com/jhatler/jhatler/compare/container-latex-v0.0.2...container-latex-v0.0.3) (2023-12-07)
+
+
+### Code Refactoring
+
+* Use distinct stage for testing ([#47](https://github.com/jhatler/jhatler/issues/47)) ([fe548d1](https://github.com/jhatler/jhatler/commit/fe548d1bab7a7ce6f5ceecd850ac8d8aa28c647c)), closes [#45](https://github.com/jhatler/jhatler/issues/45)
+
 ## [0.0.2](https://github.com/jhatler/jhatler/compare/container-latex-v0.0.1...container-latex-v0.0.2) (2023-12-06)
 
 
