@@ -21,8 +21,8 @@ RUN apt-get update \
  && make \
  && mv chktex /usr/local/bin
 
-# Final stage
-FROM mcr.microsoft.com/devcontainers/base:bookworm
+# Functional stage
+FROM mcr.microsoft.com/devcontainers/base:bookworm as functional
 SHELL ["/bin/bash", "-o", "pipefail", "-e", "-c"]
 ENV SHELL=/bin/bash
 ENV DEBIAN_FRONTEND=noninteractive
@@ -73,8 +73,12 @@ RUN tlmgr install \
 
 COPY --from=chktex_build /usr/local/bin/chktex /usr/local/bin/chktex
 
-# Verify binaries work and have the right permissions
+# Testing stage - verify binaries work and have the right permissions
+FROM functional as testing
 RUN tlmgr version \
  && latexmk -version \
  && texhash --version \
  && chktex --version
+
+# Final stage
+FROM functional as final
