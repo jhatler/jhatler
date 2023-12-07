@@ -1,4 +1,4 @@
-# Changelog
+# JHatler Root Changelog
 
 ## [0.0.3](https://github.com/jhatler/jhatler/compare/jhatler-v0.0.2...jhatler-v0.0.3) (2023-12-07)
 

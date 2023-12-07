@@ -1,4 +1,4 @@
-# Changelog
+# JHatler Devcontainer Changelog
 
 ## [0.0.3](https://github.com/jhatler/jhatler/compare/devcontainer-v0.0.2...devcontainer-v0.0.3) (2023-12-07)
 
