@@ -60,7 +60,7 @@ runs:
       run: echo "short_sha=$(git rev-parse --short ${{ github.sha }})" >> "$GITHUB_OUTPUT"
 
     - name: Build container
-      if: ${{ !inputs.push }}
+      if: ${{ inputs.push == 'false' }}
       uses: docker/build-push-action@v5
       env:
         DOCKER_BUILDKIT: 1
@@ -76,7 +76,7 @@ runs:
           ${{ inputs.repository }}:${{ steps.git.outputs.short_sha }}
 
     - name: Build and Push container
-      if: ${{ inputs.push }}
+      if: ${{ inputs.push == 'true' }}
       uses: docker/build-push-action@v5
       env:
         DOCKER_BUILDKIT: 1

@@ -70,7 +70,7 @@ runs:
       run: echo "short_sha=$(git rev-parse --short ${{ github.sha }})" >> "$GITHUB_OUTPUT"
 
     - name: Build devcontainer
-      if: ${{ !inputs.push }}
+      if: ${{ inputs.push == 'false' }}
       shell: bash
       run: |
         devcontainer build \
@@ -81,7 +81,7 @@ runs:
           --image-name ${{ inputs.repository }}:${{ steps.git.outputs.short_sha }}
 
     - name: Build and Push devcontainer
-      if: ${{ inputs.push }}
+      if: ${{ inputs.push == 'true' }}
       shell: bash
       run: |
         devcontainer build \
