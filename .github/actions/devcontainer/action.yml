@@ -1,0 +1,97 @@
+name: 'Devconatiner Semver Publisher'
+description: |
+  Sets up Docker and the Devcontainer CLI. Then builds the specified
+  devcontainer configuration. Requires registry credentials for usage
+  in order to leverage caching. Can optionally push image with Semver
+  and SHA Tags
+
+inputs:
+  workspace:
+    description: 'Devconatiner workspace (dir with .devcontainer or devcontainer.json)'
+    required: true
+  platforms:
+    description: 'Platforms to Build'
+    required: true
+    default: 'linux/amd64'
+  push:
+    description: 'Push images?'
+    required: true
+    default: false
+  repository:
+    description: 'Image Repository to use for caching and pushing'
+    required: true
+  semver_major:
+    description: 'Major version to use for pushed semver tags'
+    required: false
+  semver_minor:
+    description: 'Minor version to use for pushed semver tags'
+    required: false
+  semver_patch:
+    description: 'Patch version to use for pushed semver tags'
+    required: false
+  registry:
+    description: 'OCI Registry to use for caching and pushing'
+    required: true
+  username:
+    description: 'OCI Registry Username'
+    required: true
+  password:
+    description: 'OCI Registry Password'
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    - name: Set up QEMU
+      uses: docker/setup-qemu-action@v3
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v3
+
+    - name: Set up Node
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20
+
+    - name: Install Devcontainer CLI
+      shell: bash
+      run: npm install -g @devcontainers/cli@0.54.2
+
+    - name: Login to Container Registry
+      uses: docker/login-action@v3
+      with:
+        registry: ${{ inputs.registry }}
+        username: ${{ inputs.username }}
+        password: ${{ inputs.password }}
+
+    - name: Set short git commit SHA
+      id: git
+      shell: bash
+      run: echo "short_sha=$(git rev-parse --short ${{ github.sha }})" >> "$GITHUB_OUTPUT"
+
+    - name: Build devcontainer
+      if: ${{ !inputs.push }}
+      shell: bash
+      run: |
+        devcontainer build \
+          --workspace-folder ${{ inputs.workspace }} \
+          --cache-from ${{ inputs.repository }} \
+          --platform ${{ inputs.platforms }} \
+          --image-name ${{ inputs.repository }}:latest \
+          --image-name ${{ inputs.repository }}:${{ steps.git.outputs.short_sha }}
+
+    - name: Build and Push devcontainer
+      if: ${{ inputs.push }}
+      shell: bash
+      run: |
+        devcontainer build \
+          --workspace-folder ${{ inputs.workspace }} \
+          --cache-from ${{ inputs.repository }} \
+          --cache-to type=inline \
+          --platform ${{ inputs.platforms }} \
+          --image-name ${{ inputs.repository }}:latest \
+          --image-name ${{ inputs.repository }}:${{ steps.git.outputs.short_sha }} \
+          --image-name ${{ inputs.repository }}:v${{ inputs.semver_major }}.${{ inputs.semver_minor }}.${{ inputs.semver_patch }} \
+          --image-name ${{ inputs.repository }}:v${{ inputs.semver_major }}.${{ inputs.semver_minor }} \
+          --image-name ${{ inputs.repository }}:v${{ inputs.semver_major }} \
+          --push

@@ -28,20 +28,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Set short git commit SHA
-        if: ${{ steps.release.outputs.releases_created }}
-        id: git
-        shell: bash
-        run: echo "short_sha=$(git rev-parse --short ${{ github.sha }})" >> "$GITHUB_OUTPUT"
-
-      - name: Login to GitHub Container Registry
-        uses: docker/login-action@v3
-        if: ${{ steps.release.outputs['.devcontainer--release_created'] || steps.release.outputs['containers/latex--release_created'] }}
-        with:
-          registry: ghcr.io
-          username: ${{ github.repository_owner }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-
+      # jscpd:ignore-start
       - name: Publish LaTeX Container
         if: ${{ steps.release.outputs['containers/latex--release_created'] }}
         uses: ./.github/actions/container
@@ -56,15 +43,21 @@ jobs:
           semver_major: ${{ steps.release.outputs['containers/latex--major'] }}
           semver_minor: ${{ steps.release.outputs['containers/latex--minor'] }}
           semver_patch: ${{ steps.release.outputs['containers/latex--patch'] }}
+      # jscpd:ignore-end
 
+      # jscpd:ignore-start
       - name: Publish Devcontainer
         if: ${{ steps.release.outputs['.devcontainer--release_created'] || steps.release.outputs['containers/latex--release_created'] }}
-        shell: bash
-        run: |
-          devcontainer build \
-            --workspace-folder ${{ github.workspace }} \
-            --cache-from ghcr.io/jhatler/jhatler-devcontainer \
-            --image-name ghcr.io/jhatler/jhatler-devcontainer:latest \
-            --image-name ghcr.io/jhatler/jhatler-devcontainer:${{ steps.git.outputs.short_sha }} \
-            --image-name ghcr.io/jhatler/jhatler-devcontainer:v${{ steps.release.outputs['.devcontainer--major'] }}.${{ steps.release.outputs['.devcontainer--minor'] }}.${{ steps.release.outputs['.devcontainer--patch'] }} \
-            --push
+        uses: ./.github/actions/devcontainer
+        with:
+          workspace: ${{ github.workspace }}
+          platforms: linux/amd64
+          push: true
+          repository: ghcr.io/jhatler/jhatler-devcontainer
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+          semver_major: ${{ steps.release.outputs['containers/latex--major'] }}
+          semver_minor: ${{ steps.release.outputs['containers/latex--minor'] }}
+          semver_patch: ${{ steps.release.outputs['containers/latex--patch'] }}
+      # jscpd:ignore-end
