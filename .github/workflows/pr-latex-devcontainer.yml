@@ -1,10 +1,10 @@
 ---
-name: PR Checks for Devcontainer
+name: PR Checks for LaTeX Devcontainer
 on:
   pull_request:
     paths:
-      - '.devcontainer/**'
-      - '!.devcontainer/CHANGELOG.md'
+      - 'devcontainers/latex/**'
+      - '!devcontainers/latex/CHANGELOG.md'
 
 concurrency:
   # For pull requests, cancel all currently-running jobs for this workflow
@@ -29,10 +29,10 @@ jobs:
       - name: Build Devcontainer
         uses: ./.github/actions/devcontainer
         with:
-          workspace: ${{ github.workspace }}
+          workspace: ${{ github.workspace }}/devcontainers/latex
           platforms: linux/amd64
           push: false
-          repository: ghcr.io/jhatler/jhatler-devcontainer
+          repository: ghcr.io/jhatler/latex-devcontainer
           registry: ghcr.io
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}

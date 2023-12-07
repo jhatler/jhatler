@@ -6,7 +6,8 @@
             "group-name": "devenv",
             "components": [
                 "devcontainer",
-                "container-latex"
+                "container-latex",
+                "devcontainer-latex"
             ],
             "merge": false
         }
@@ -41,13 +42,21 @@
             "package-name": "devcontainer",
             "component": "devcontainer",
             "extra-files": [
-                "Dockerfile"
+                "devcontainer.json"
             ]
         },
         "containers/latex": {
             "release-type": "simple",
             "package-name": "container-latex",
             "component": "container-latex"
+        },
+        "devcontainers/latex": {
+            "release-type": "simple",
+            "package-name": "devcontainer-latex",
+            "component": "devcontainer-latex",
+            "extra-files": [
+                "devcontainer.json"
+            ]
         }
     }
 }
