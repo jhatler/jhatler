@@ -14,6 +14,18 @@ function usage() {
 
 # Runs super-linter via docker
 function run_linter() {
+    # super-linter fails if dependencies are not installed
+    if [[ ! -d "$_WORKSPACE"/node_modules ]]; then
+        echo "Installing npm dependencies..."
+        npm ci
+    fi
+
+    # prettier runs as root in container, and creates this directory if missing.
+    # That causes issues when running as non-root user locally
+    if [[ ! -d "$_WORKSPACE"/node_modules/.cache/prettier ]]; then
+        mkdir -p "$_WORKSPACE"/node_modules/.cache/prettier
+    fi
+
     docker run --rm \
         -w /tmp/lint \
         -e ACTIONS_RUNNER_DEBUG="$_DEBUG" \

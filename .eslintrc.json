@@ -1,0 +1,24 @@
+{
+    "root": true,
+    "ignorePatterns": [
+        "!.eslintrc.json",
+        "!.release-please-manifest.json",
+        "!.devcontainer"
+    ],
+    "overrides": [
+        {
+            "files": [
+                "*.json"
+            ],
+            "extends": [
+                "plugin:jsonc/recommended-with-json"
+            ],
+            "parser": "jsonc-eslint-parser",
+            "parserOptions": {
+                "jsonSyntax": "JSON"
+            }
+        }
+    ],
+    "rules": {
+    }
+}
