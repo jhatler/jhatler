@@ -55,7 +55,7 @@
             "package-name": "devcontainer-latex",
             "component": "devcontainer-latex",
             "extra-files": [
-                "devcontainer.json"
+                ".devcontainer/devcontainer.json"
             ]
         }
     }
