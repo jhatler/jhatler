@@ -60,23 +60,6 @@ runs:
       run: echo "short_sha=$(git rev-parse --short ${{ github.sha }})" >> "$GITHUB_OUTPUT"
 
     - name: Build container
-      if: ${{ inputs.push == 'false' }}
-      uses: docker/build-push-action@v5
-      env:
-        DOCKER_BUILDKIT: 1
-        BUILDKIT_INLINE_CACHE: 1
-      with:
-        cache-from: type=registry,ref=${{ inputs.repository }}
-        context: ${{ inputs.context }}
-        load: true
-        platforms: ${{ inputs.platforms }}
-        push: ${{ inputs.push }}
-        tags: |
-          ${{ inputs.repository }}:latest
-          ${{ inputs.repository }}:${{ steps.git.outputs.short_sha }}
-
-    - name: Build and Push container
-      if: ${{ inputs.push == 'true' }}
       uses: docker/build-push-action@v5
       env:
         DOCKER_BUILDKIT: 1
@@ -87,10 +70,24 @@ runs:
         context: ${{ inputs.context }}
         load: true
         platforms: ${{ inputs.platforms }}
-        push: ${{ inputs.push }}
-        tags: |
-          ${{ inputs.repository }}:latest
-          ${{ inputs.repository }}:${{ steps.git.outputs.short_sha }}
-          ${{ inputs.repository }}:v${{ inputs.semver_major }}.${{ inputs.semver_minor }}.${{ inputs.semver_patch }}
-          ${{ inputs.repository }}:v${{ inputs.semver_major }}.${{ inputs.semver_minor }}
-          ${{ inputs.repository }}:v${{ inputs.semver_major }}
+        push: false
+        tags: ${{ inputs.repository }}:${{ steps.git.outputs.short_sha }}
+
+    - name: Tag container
+      if: ${{ inputs.push == 'true' }}
+      shell: bash
+      run: |
+        docker tag ${{ inputs.repository }}:${{ steps.git.outputs.short_sha }} ${{ inputs.repository }}:latest
+        docker tag ${{ inputs.repository }}:${{ steps.git.outputs.short_sha }} ${{ inputs.repository }}:v${{ inputs.semver_major }}.${{ inputs.semver_minor }}.${{ inputs.semver_patch }}
+        docker tag ${{ inputs.repository }}:${{ steps.git.outputs.short_sha }} ${{ inputs.repository }}:v${{ inputs.semver_major }}.${{ inputs.semver_minor }}
+        docker tag ${{ inputs.repository }}:${{ steps.git.outputs.short_sha }} ${{ inputs.repository }}:v${{ inputs.semver_major }}
+
+    - name: Push devcontainer
+      if: ${{ inputs.push == 'true' }}
+      shell: bash
+      run: |
+        docker push ${{ inputs.repository }}:latest
+        docker push ${{ inputs.repository }}:${{ steps.git.outputs.short_sha }}
+        docker push ${{ inputs.repository }}:v${{ inputs.semver_major }}.${{ inputs.semver_minor }}.${{ inputs.semver_patch }}
+        docker push ${{ inputs.repository }}:v${{ inputs.semver_major }}.${{ inputs.semver_minor }}
+        docker push ${{ inputs.repository }}:v${{ inputs.semver_major }}
