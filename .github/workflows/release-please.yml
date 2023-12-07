@@ -47,11 +47,15 @@ jobs:
         uses: ./.github/actions/container
         with:
           context: "{{defaultContext}}:containers/latex"
+          platforms: linux/amd64
           push: true
-          tags: |
-            ghcr.io/jhatler/latex:${{ steps.git.outputs.short_sha }}
-            ghcr.io/jhatler/latex:v${{ steps.release.outputs['containers/latex--major'] }}.${{ steps.release.outputs['containers/latex--minor'] }}.${{ steps.release.outputs['containers/latex--patch'] }}
-            ghcr.io/jhatler/latex:latest
+          repository: ghcr.io/jhatler/latex
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+          semver_major: ${{ steps.release.outputs['containers/latex--major'] }}
+          semver_minor: ${{ steps.release.outputs['containers/latex--minor'] }}
+          semver_patch: ${{ steps.release.outputs['containers/latex--patch'] }}
 
       - name: Publish Devcontainer
         if: ${{ steps.release.outputs['.devcontainer--release_created'] || steps.release.outputs['containers/latex--release_created'] }}

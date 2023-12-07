@@ -12,6 +12,10 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
   cancel-in-progress: true
 
+permissions:
+  contents: read
+  packages: read
+
 jobs:
   build:
     name: Build LaTeX Container
@@ -22,15 +26,13 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Set short git commit SHA
-        id: git
-        shell: bash
-        run: echo "short_sha=$(git rev-parse --short ${{ github.sha }})" >> "$GITHUB_OUTPUT"
-
       - name: Build Container
         uses: ./.github/actions/container
         with:
           context: "{{defaultContext}}:containers/latex"
+          platforms: linux/amd64
           push: false
-          tags: |
-            ghcr.io/jhatler/latex:${{ steps.git.outputs.short_sha }}
+          repository: ghcr.io/jhatler/latex
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GITHUB_TOKEN }}
