@@ -1,5 +1,17 @@
 # JHatler Root Changelog
 
+## [0.0.4](https://github.com/jhatler/jhatler/compare/jhatler-v0.0.3...jhatler-v0.0.4) (2023-12-07)
+
+
+### Bug Fixes
+
+* Use devcontainer steps in container action ([#71](https://github.com/jhatler/jhatler/issues/71)) ([540a71b](https://github.com/jhatler/jhatler/commit/540a71bfccc7ae32e7fa8ce4f659e0f2c5925ee4)), closes [#69](https://github.com/jhatler/jhatler/issues/69)
+
+
+### Documentation
+
+* Add Changelog Titles ([#74](https://github.com/jhatler/jhatler/issues/74)) ([a24750d](https://github.com/jhatler/jhatler/commit/a24750d11bf2cfaee96675d174a1b5d146ff3c8b)), closes [#73](https://github.com/jhatler/jhatler/issues/73)
+
 ## [0.0.3](https://github.com/jhatler/jhatler/compare/jhatler-v0.0.2...jhatler-v0.0.3) (2023-12-07)
 
 
