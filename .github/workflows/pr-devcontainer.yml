@@ -22,13 +22,9 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Set short git commit SHA
-        id: git
-        shell: bash
-        run: echo "short_sha=$(git rev-parse --short ${{ github.sha }})" >> "$GITHUB_OUTPUT"
-
       - name: Build Devcontainer
-        uses: devcontainers/ci@v0.3
-        with:
-          cacheFrom: ghcr.io/jhatler/jhatler-devcontainer
-          push: never
+        shell: bash
+        run: |
+          devcontainer build \
+            --workspace-folder ${{ github.workspace }} \
+            --cache-from ghcr.io/jhatler/jhatler-devcontainer
