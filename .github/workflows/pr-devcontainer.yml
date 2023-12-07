@@ -12,6 +12,10 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
   cancel-in-progress: true
 
+permissions:
+  contents: read
+  packages: read
+
 jobs:
   build:
     name: Build Devcontainer
@@ -23,8 +27,12 @@ jobs:
           fetch-depth: 0
 
       - name: Build Devcontainer
-        shell: bash
-        run: |
-          devcontainer build \
-            --workspace-folder ${{ github.workspace }} \
-            --cache-from ghcr.io/jhatler/jhatler-devcontainer
+        uses: ./.github/actions/devcontainer
+        with:
+          workspace: ${{ github.workspace }}
+          platforms: linux/amd64
+          push: false
+          repository: ghcr.io/jhatler/jhatler-devcontainer
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GITHUB_TOKEN }}

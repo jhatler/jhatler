@@ -55,3 +55,7 @@ function_next_line = false
 # github workflow files
 [.github/workflows/*.yml]
 max_line_length = unset
+
+# github action files
+[.github/actions/*/action.yml]
+max_line_length = unset
