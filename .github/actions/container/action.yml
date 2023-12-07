@@ -59,7 +59,13 @@ runs:
       shell: bash
       run: echo "short_sha=$(git rev-parse --short ${{ github.sha }})" >> "$GITHUB_OUTPUT"
 
+    - name: Set container UUID
+      id: uuid
+      shell: bash
+      run: echo "uuid=$(uuidgen -s -n @url -N ${{ inputs.repository }}:${{ steps.git.outputs.short_sha }})" >> "$GITHUB_OUTPUT"
+
     - name: Build container
+      id: build
       uses: docker/build-push-action@v5
       env:
         DOCKER_BUILDKIT: 1
@@ -68,21 +74,27 @@ runs:
         cache-from: type=registry,ref=${{ inputs.repository }}
         cache-to: type=inline
         context: ${{ inputs.context }}
-        load: true
+        outputs: type=docker,dest=${{ runner.temp }}/${{ steps.uuid.outputs.uuid }}.tar
         platforms: ${{ inputs.platforms }}
         push: false
-        tags: ${{ inputs.repository }}:${{ steps.git.outputs.short_sha }}
+
+    - name: Load container
+      if: ${{ inputs.push == 'true' }}
+      shell: bash
+      run: |
+        docker load -i ${{ runner.temp }}/${{ steps.uuid.outputs.uuid }}.tar
 
     - name: Tag container
       if: ${{ inputs.push == 'true' }}
       shell: bash
       run: |
-        docker tag ${{ inputs.repository }}:${{ steps.git.outputs.short_sha }} ${{ inputs.repository }}:latest
-        docker tag ${{ inputs.repository }}:${{ steps.git.outputs.short_sha }} ${{ inputs.repository }}:v${{ inputs.semver_major }}.${{ inputs.semver_minor }}.${{ inputs.semver_patch }}
-        docker tag ${{ inputs.repository }}:${{ steps.git.outputs.short_sha }} ${{ inputs.repository }}:v${{ inputs.semver_major }}.${{ inputs.semver_minor }}
-        docker tag ${{ inputs.repository }}:${{ steps.git.outputs.short_sha }} ${{ inputs.repository }}:v${{ inputs.semver_major }}
+        docker tag ${{ steps.build.outputs.imageid }} ${{ inputs.repository }}:latest
+        docker tag ${{ steps.build.outputs.imageid }} ${{ inputs.repository }}:${{ steps.git.outputs.short_sha }}
+        docker tag ${{ steps.build.outputs.imageid }} ${{ inputs.repository }}:v${{ inputs.semver_major }}.${{ inputs.semver_minor }}.${{ inputs.semver_patch }}
+        docker tag ${{ steps.build.outputs.imageid }} ${{ inputs.repository }}:v${{ inputs.semver_major }}.${{ inputs.semver_minor }}
+        docker tag ${{ steps.build.outputs.imageid }} ${{ inputs.repository }}:v${{ inputs.semver_major }}
 
-    - name: Push devcontainer
+    - name: Push container
       if: ${{ inputs.push == 'true' }}
       shell: bash
       run: |
