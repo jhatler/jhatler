@@ -1,5 +1,37 @@
 # Changelog
 
+## [0.0.3](https://github.com/jhatler/jhatler/compare/jhatler-v0.0.2...jhatler-v0.0.3) (2023-12-07)
+
+
+### Features
+
+* Abstracted devcontainer steps to action ([#51](https://github.com/jhatler/jhatler/issues/51)) ([2bf35a9](https://github.com/jhatler/jhatler/commit/2bf35a9c6e170dd29641b0b84df6285a9f268738)), closes [#49](https://github.com/jhatler/jhatler/issues/49)
+* Configure eslint to parse JSONC files ([#55](https://github.com/jhatler/jhatler/issues/55)) ([3ce9fd1](https://github.com/jhatler/jhatler/commit/3ce9fd1650064bc986d4ac54dccde7542b65de89)), closes [#54](https://github.com/jhatler/jhatler/issues/54)
+* Devcontainer publishing ([#57](https://github.com/jhatler/jhatler/issues/57)) ([4b91e5f](https://github.com/jhatler/jhatler/commit/4b91e5f4a62fe5053b7cdd0c7ba54258c65513e4)), closes [#46](https://github.com/jhatler/jhatler/issues/46)
+* Implement docker caching and semver tagging ([#50](https://github.com/jhatler/jhatler/issues/50)) ([e186304](https://github.com/jhatler/jhatler/commit/e1863040c629a50bead885100e4a17c9dc741427)), closes [#48](https://github.com/jhatler/jhatler/issues/48)
+* Increase release note verbosity ([#53](https://github.com/jhatler/jhatler/issues/53)) ([f3b8a9e](https://github.com/jhatler/jhatler/commit/f3b8a9ec4458db9b695cb679754c99da13686407)), closes [#52](https://github.com/jhatler/jhatler/issues/52)
+
+
+### Bug Fixes
+
+* Correct eslint setup for JSONC ([#56](https://github.com/jhatler/jhatler/issues/56)) ([ec66667](https://github.com/jhatler/jhatler/commit/ec66667b6c866625c6c7ac4c7bee91cea80fbca3)), closes [#54](https://github.com/jhatler/jhatler/issues/54)
+* Downgrade docker-related actions ([#64](https://github.com/jhatler/jhatler/issues/64)) ([f473862](https://github.com/jhatler/jhatler/commit/f473862d959c4eab16299696073d64be0e0d7095)), closes [#63](https://github.com/jhatler/jhatler/issues/63)
+* Load and push devcontainer as separate steps ([#66](https://github.com/jhatler/jhatler/issues/66)) ([3321525](https://github.com/jhatler/jhatler/commit/33215258747d136e90070c27f2c997676ffbd580)), closes [#31](https://github.com/jhatler/jhatler/issues/31)
+* Qualify path for release versioning ([#68](https://github.com/jhatler/jhatler/issues/68)) ([a70d703](https://github.com/jhatler/jhatler/commit/a70d703433a22edeef7d77d5ca49caedfee4c96f)), closes [#67](https://github.com/jhatler/jhatler/issues/67)
+* Use devcontainer cli directly ([#43](https://github.com/jhatler/jhatler/issues/43)) ([c70570d](https://github.com/jhatler/jhatler/commit/c70570d65ee7496854fe609747ff0bb5bf56d2ab)), closes [#31](https://github.com/jhatler/jhatler/issues/31)
+* Use string compare for booleans in actions ([#59](https://github.com/jhatler/jhatler/issues/59)) ([8154bc7](https://github.com/jhatler/jhatler/commit/8154bc74aab93d9ccdd19966a8d399ee62eb05c7)), closes [#58](https://github.com/jhatler/jhatler/issues/58)
+
+
+### Reverts
+
+* Downgrade docker-related actions ([#65](https://github.com/jhatler/jhatler/issues/65)) ([60c5bb5](https://github.com/jhatler/jhatler/commit/60c5bb590783e8f5af68aca49bec205d18cde605))
+
+
+### Code Refactoring
+
+* Reduce repetition of container action ([#70](https://github.com/jhatler/jhatler/issues/70)) ([d3740a0](https://github.com/jhatler/jhatler/commit/d3740a07b617835f7eb40713ebbf21c4e88b7354)), closes [#69](https://github.com/jhatler/jhatler/issues/69)
+* Use distinct stage for testing ([#47](https://github.com/jhatler/jhatler/issues/47)) ([fe548d1](https://github.com/jhatler/jhatler/commit/fe548d1bab7a7ce6f5ceecd850ac8d8aa28c647c)), closes [#45](https://github.com/jhatler/jhatler/issues/45)
+
 ## [0.0.2](https://github.com/jhatler/jhatler/compare/jhatler-v0.0.1...jhatler-v0.0.2) (2023-12-06)
 
 
