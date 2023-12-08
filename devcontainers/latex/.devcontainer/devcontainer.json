@@ -52,6 +52,21 @@
                 "files.associations": {
                     "*.tex": "latex"
                 },
+                "json.schemas": [
+                    {
+                        "fileMatch": [
+                            "*/devcontainer-feature.json"
+                        ],
+                        "url": "https://raw.githubusercontent.com/devcontainers/spec/main/schemas/devContainerFeature.schema.json"
+                    },
+                    {
+                        "fileMatch": [
+                            "*/devcontainer.json",
+                            "*/.devcontainer.json"
+                        ],
+                        "url": "https://raw.githubusercontent.com/devcontainers/spec/main/schemas/devContainer.schema.json"
+                    }
+                ],
                 "latex-workshop.latexindent.path": "latexindent",
                 "latex-workshop.latexindent.args": [
                     "-c",
