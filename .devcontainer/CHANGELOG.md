@@ -2,6 +2,7 @@
 
 ## [0.0.4](https://github.com/jhatler/jhatler/compare/devcontainer-v0.0.3...devcontainer-v0.0.4) (2023-12-07)
 
+This release failed to deploy.
 
 ### Documentation
 
@@ -9,6 +10,7 @@
 
 ## [0.0.3](https://github.com/jhatler/jhatler/compare/devcontainer-v0.0.2...devcontainer-v0.0.3) (2023-12-07)
 
+This release failed to deploy.
 
 ### Features
 
