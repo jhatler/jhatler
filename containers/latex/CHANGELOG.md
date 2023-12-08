@@ -2,6 +2,7 @@
 
 ## [0.0.4](https://github.com/jhatler/jhatler/compare/container-latex-v0.0.3...container-latex-v0.0.4) (2023-12-07)
 
+This release failed to deploy.
 
 ### Documentation
 
@@ -9,6 +10,7 @@
 
 ## [0.0.3](https://github.com/jhatler/jhatler/compare/container-latex-v0.0.2...container-latex-v0.0.3) (2023-12-07)
 
+This release failed to deploy.
 
 ### Code Refactoring
 
@@ -16,6 +18,7 @@
 
 ## [0.0.2](https://github.com/jhatler/jhatler/compare/container-latex-v0.0.1...container-latex-v0.0.2) (2023-12-06)
 
+This release failed to deploy.
 
 ### Bug Fixes
 
@@ -24,6 +27,7 @@
 
 ## [0.0.1](https://github.com/jhatler/jhatler/compare/container-latex-v0.0.0...container-latex-v0.0.1) (2023-12-06)
 
+This release failed to deploy.
 
 ### Features
 
