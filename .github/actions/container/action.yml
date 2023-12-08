@@ -74,7 +74,7 @@ runs:
         cache-from: type=registry,ref=${{ inputs.repository }}
         cache-to: type=inline
         context: ${{ inputs.context }}
-        outputs: type=docker,dest=${{ runner.temp }}/${{ steps.uuid.outputs.uuid }}.tar
+        outputs: type=docker,dest=${{ github.workspace }}/${{ steps.uuid.outputs.uuid }}.tar
         platforms: ${{ inputs.platforms }}
         push: false
 
@@ -82,7 +82,7 @@ runs:
       if: ${{ inputs.push == 'true' }}
       shell: bash
       run: |
-        docker load -i ${{ runner.temp }}/${{ steps.uuid.outputs.uuid }}.tar
+        docker load -i ${{ github.workspace }}/${{ steps.uuid.outputs.uuid }}.tar
 
     - name: Tag container
       if: ${{ inputs.push == 'true' }}
