@@ -1,0 +1,6 @@
+# CODEOWNERS for GitHub review assignment
+#
+# Reference: https://help.github.com/en/articles/about-code-owners
+
+# Everything not listed explicity
+*                                       @jhatler
