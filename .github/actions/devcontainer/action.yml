@@ -83,17 +83,17 @@ runs:
           --cache-from ${{ inputs.repository }} \
           --cache-to type=inline \
           --platform ${{ inputs.platforms }} \
-          --output type=docker,dest=${{ runner.temp }}/${{ steps.uuid.outputs.uuid }}.tar \
-          | tee ${{ runner.temp }}/${{ steps.uuid.outputs.uuid }}.stdout
+          --output type=docker,dest=${{ github.workspace }}/${{ steps.uuid.outputs.uuid }}.tar \
+          | tee ${{ github.workspace }}/${{ steps.uuid.outputs.uuid }}.stdout
 
-        echo "image_name=$(cat ${{ runner.temp }}/${{ steps.uuid.outputs.uuid }}.stdout \
+        echo "image_name=$(cat ${{ github.workspace }}/${{ steps.uuid.outputs.uuid }}.stdout \
           | jq -r .imageName[0])" >> "$GITHUB_OUTPUT"
 
     - name: Load devcontainer
       if: ${{ inputs.push == 'true' }}
       shell: bash
       run: |
-        docker load -i ${{ runner.temp }}/${{ steps.uuid.outputs.uuid }}.tar
+        docker load -i ${{ github.workspace }}/${{ steps.uuid.outputs.uuid }}.tar
 
     - name: Tag devcontainer
       if: ${{ inputs.push == 'true' }}
