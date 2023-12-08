@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/devcontainers/spec/main/schemas/devContainer.schema.json",
-    "image": "ghcr.io/jhatler/latex-devcontainer:v0.0.5", /* x-release-please-version */
+    "image": "ghcr.io/jhatler/latex-devcontainer:v0.0.6", /* x-release-please-version */
     "remoteUser": "vscode",
     "containerUser": "vscode",
     "postCreateCommand": "docker pull ghcr.io/super-linter/super-linter:v5.7.2"
