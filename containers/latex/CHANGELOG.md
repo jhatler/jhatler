@@ -1,5 +1,12 @@
 # LaTeX Container Changelog
 
+## [0.0.5](https://github.com/jhatler/jhatler/compare/container-latex-v0.0.4...container-latex-v0.0.5) (2023-12-08)
+
+
+### Documentation
+
+* Document deployment failures. ([#78](https://github.com/jhatler/jhatler/issues/78)) ([28dac38](https://github.com/jhatler/jhatler/commit/28dac3858225a5893b47c993b57638da654bf3c7)), closes [#76](https://github.com/jhatler/jhatler/issues/76)
+
 ## [0.0.4](https://github.com/jhatler/jhatler/compare/container-latex-v0.0.3...container-latex-v0.0.4) (2023-12-07)
 
 This release failed to deploy.

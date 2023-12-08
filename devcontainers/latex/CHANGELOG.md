@@ -1,5 +1,18 @@
 # LaTeX Devcontainer Changelog
 
+## [0.0.5](https://github.com/jhatler/jhatler/compare/devcontainer-latex-v0.0.4...devcontainer-latex-v0.0.5) (2023-12-08)
+
+
+### Features
+
+* Add JSON schemas for devcontainer files ([#82](https://github.com/jhatler/jhatler/issues/82)) ([fcc6ebb](https://github.com/jhatler/jhatler/commit/fcc6ebb77b0cb4292be7633ce4121a066e328bab)), closes [#61](https://github.com/jhatler/jhatler/issues/61)
+* Add release-please CLI to latex devcontainer ([#80](https://github.com/jhatler/jhatler/issues/80)) ([86160d4](https://github.com/jhatler/jhatler/commit/86160d4e6ed4881a9396259736a99579ee7356bd)), closes [#60](https://github.com/jhatler/jhatler/issues/60)
+
+
+### Documentation
+
+* Document deployment failures. ([#78](https://github.com/jhatler/jhatler/issues/78)) ([28dac38](https://github.com/jhatler/jhatler/commit/28dac3858225a5893b47c993b57638da654bf3c7)), closes [#76](https://github.com/jhatler/jhatler/issues/76)
+
 ## [0.0.4](https://github.com/jhatler/jhatler/compare/devcontainer-latex-v0.0.3...devcontainer-latex-v0.0.4) (2023-12-07)
 
 This release failed to deploy.
