@@ -3,7 +3,8 @@
     "ignorePatterns": [
         "!.eslintrc.json",
         "!.release-please-manifest.json",
-        "!.devcontainer"
+        "!.devcontainer",
+        "!.vscode"
     ],
     "overrides": [
         {
