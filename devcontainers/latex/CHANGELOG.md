@@ -1,5 +1,12 @@
 # LaTeX Devcontainer Changelog
 
+## [0.0.6](https://github.com/jhatler/jhatler/compare/devcontainer-latex-v0.0.5...devcontainer-latex-v0.0.6) (2023-12-08)
+
+
+### Miscellaneous Chores
+
+* **devcontainer-latex:** Synchronize undefined versions
+
 ## [0.0.5](https://github.com/jhatler/jhatler/compare/devcontainer-latex-v0.0.4...devcontainer-latex-v0.0.5) (2023-12-08)
 
 
