@@ -1,5 +1,17 @@
 # JHatler Root Changelog
 
+## [0.0.8](https://github.com/jhatler/jhatler/compare/jhatler-v0.0.7...jhatler-v0.0.8) (2023-12-09)
+
+
+### Features
+
+* Add cleanup to (dev)container actions ([#113](https://github.com/jhatler/jhatler/issues/113)) ([b660f75](https://github.com/jhatler/jhatler/commit/b660f75bd8e1aba98e1933424f13b748f9112f99)), closes [#107](https://github.com/jhatler/jhatler/issues/107)
+
+
+### Documentation
+
+* Document deploy failures ([#112](https://github.com/jhatler/jhatler/issues/112)) ([d014c6b](https://github.com/jhatler/jhatler/commit/d014c6bccdb05bfc596b5a0bb38eaac15cccca94)), closes [#108](https://github.com/jhatler/jhatler/issues/108)
+
 ## [0.0.7](https://github.com/jhatler/jhatler/compare/jhatler-v0.0.6...jhatler-v0.0.7) (2023-12-09)
 
 This release failed to deploy.
