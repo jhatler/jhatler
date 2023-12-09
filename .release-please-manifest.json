@@ -1,6 +1,6 @@
 {
-  ".": "0.0.7",
-  ".devcontainer": "0.0.7",
-  "containers/latex": "0.0.7",
-  "devcontainers/latex": "0.0.7"
+  ".": "0.0.8",
+  ".devcontainer": "0.0.8",
+  "containers/latex": "0.0.8",
+  "devcontainers/latex": "0.0.8"
 }
