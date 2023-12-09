@@ -83,6 +83,7 @@ runs:
       shell: bash
       run: |
         docker load -i ${{ github.workspace }}/${{ steps.uuid.outputs.uuid }}.tar
+        rm -f ${{ github.workspace }}/${{ steps.uuid.outputs.uuid }}.tar
 
     - name: Tag container
       if: ${{ inputs.push == 'true' }}

@@ -94,6 +94,8 @@ runs:
       shell: bash
       run: |
         docker load -i ${{ github.workspace }}/${{ steps.uuid.outputs.uuid }}.tar
+        rm -f ${{ github.workspace }}/${{ steps.uuid.outputs.uuid }}.tar
+        rm -f ${{ github.workspace }}/${{ steps.uuid.outputs.uuid }}.stdout
 
     - name: Tag devcontainer
       if: ${{ inputs.push == 'true' }}
