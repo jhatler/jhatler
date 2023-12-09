@@ -1,5 +1,12 @@
 # LaTeX Devcontainer Changelog
 
+## [0.0.9](https://github.com/jhatler/jhatler/compare/devcontainer-latex-v0.0.8...devcontainer-latex-v0.0.9) (2023-12-09)
+
+
+### Documentation
+
+* Document deploy failures ([#116](https://github.com/jhatler/jhatler/issues/116)) ([b1a4486](https://github.com/jhatler/jhatler/commit/b1a4486caad2f73b30bf3c670a08a6705ecd2730)), closes [#108](https://github.com/jhatler/jhatler/issues/108)
+
 ## [0.0.8](https://github.com/jhatler/jhatler/compare/devcontainer-latex-v0.0.7...devcontainer-latex-v0.0.8) (2023-12-09)
 
 This release failed to deploy.
