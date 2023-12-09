@@ -2,6 +2,7 @@
 
 ## [0.0.6](https://github.com/jhatler/jhatler/compare/container-latex-v0.0.5...container-latex-v0.0.6) (2023-12-08)
 
+This release failed to deploy.
 
 ### Miscellaneous Chores
 
@@ -9,6 +10,7 @@
 
 ## [0.0.5](https://github.com/jhatler/jhatler/compare/container-latex-v0.0.4...container-latex-v0.0.5) (2023-12-08)
 
+This release failed to deploy.
 
 ### Documentation
 

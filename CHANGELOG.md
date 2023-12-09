@@ -2,6 +2,7 @@
 
 ## [0.0.6](https://github.com/jhatler/jhatler/compare/jhatler-v0.0.5...jhatler-v0.0.6) (2023-12-08)
 
+This release failed to deploy.
 
 ### Features
 
@@ -21,6 +22,7 @@
 
 ## [0.0.5](https://github.com/jhatler/jhatler/compare/jhatler-v0.0.4...jhatler-v0.0.5) (2023-12-08)
 
+This release failed to deploy.
 
 ### Features
 
