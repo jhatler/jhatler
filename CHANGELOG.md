@@ -2,6 +2,7 @@
 
 ## [0.0.8](https://github.com/jhatler/jhatler/compare/jhatler-v0.0.7...jhatler-v0.0.8) (2023-12-09)
 
+This release failed to deploy.
 
 ### Features
 
