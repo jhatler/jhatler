@@ -1,5 +1,17 @@
 # JHatler Root Changelog
 
+## [0.0.9](https://github.com/jhatler/jhatler/compare/jhatler-v0.0.8...jhatler-v0.0.9) (2023-12-09)
+
+
+### Bug Fixes
+
+* Use medium texlive scheme to save space ([#115](https://github.com/jhatler/jhatler/issues/115)) ([ed99c86](https://github.com/jhatler/jhatler/commit/ed99c867191019a7c65f701fbec03006a763732e)), closes [#107](https://github.com/jhatler/jhatler/issues/107)
+
+
+### Documentation
+
+* Document deploy failures ([#116](https://github.com/jhatler/jhatler/issues/116)) ([b1a4486](https://github.com/jhatler/jhatler/commit/b1a4486caad2f73b30bf3c670a08a6705ecd2730)), closes [#108](https://github.com/jhatler/jhatler/issues/108)
+
 ## [0.0.8](https://github.com/jhatler/jhatler/compare/jhatler-v0.0.7...jhatler-v0.0.8) (2023-12-09)
 
 This release failed to deploy.
