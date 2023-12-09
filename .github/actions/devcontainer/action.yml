@@ -38,6 +38,10 @@ inputs:
   password:
     description: 'OCI Registry Password'
     required: true
+  cleanup:
+    description: 'Cleanup images after build?'
+    required: true
+    default: true
 
 runs:
   using: "composite"
@@ -116,3 +120,16 @@ runs:
         docker push ${{ inputs.repository }}:v${{ inputs.semver_major }}.${{ inputs.semver_minor }}.${{ inputs.semver_patch }}
         docker push ${{ inputs.repository }}:v${{ inputs.semver_major }}.${{ inputs.semver_minor }}
         docker push ${{ inputs.repository }}:v${{ inputs.semver_major }}
+
+    - name: Cleanup devcontainer build
+      if: ${{ inputs.cleanup == 'true' }}
+      shell: bash
+      run: |
+        docker image rm -f ${{ steps.build.outputs.image_name }} \
+          ${{ inputs.repository }}:latest \
+          ${{ inputs.repository }}:${{ steps.git.outputs.short_sha }} \
+          ${{ inputs.repository }}:v${{ inputs.semver_major }}.${{ inputs.semver_minor }}.${{ inputs.semver_patch }} \
+          ${{ inputs.repository }}:v${{ inputs.semver_major }}.${{ inputs.semver_minor }} \
+          ${{ inputs.repository }}:v${{ inputs.semver_major }}
+
+        docker builder prune --all --force --verbose
