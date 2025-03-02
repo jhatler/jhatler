@@ -64,3 +64,8 @@ max_line_length = unset
 # github action files
 [.github/actions/*/action.yml]
 max_line_length = unset
+
+# Imported LaTeX classes
+[latex/*.cls]
+max_line_length = unset
+indent_style = unset
