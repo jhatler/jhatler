@@ -1,5 +1,12 @@
 # JHatler Devcontainer Changelog
 
+## [0.0.10](https://github.com/jhatler/jhatler/compare/devcontainer-v0.0.9...devcontainer-v0.0.10) (2025-03-02)
+
+
+### Bug Fixes
+
+* Super-linter version in devcontainer ([#136](https://github.com/jhatler/jhatler/issues/136)) ([bdf46ee](https://github.com/jhatler/jhatler/commit/bdf46ee3bdfee376cad1f3d55bf24214de728c9f)), closes [#135](https://github.com/jhatler/jhatler/issues/135)
+
 ## [0.0.9](https://github.com/jhatler/jhatler/compare/devcontainer-v0.0.8...devcontainer-v0.0.9) (2023-12-09)
 
 

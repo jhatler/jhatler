@@ -1,5 +1,23 @@
 # JHatler Root Changelog
 
+## [0.0.10](https://github.com/jhatler/jhatler/compare/jhatler-v0.0.9...jhatler-v0.0.10) (2025-03-02)
+
+
+### Features
+
+* Add codeql workflow ([#125](https://github.com/jhatler/jhatler/issues/125)) ([1c7320a](https://github.com/jhatler/jhatler/commit/1c7320a9f12a6a1998aba74a26310fd92cd9169c)), closes [#119](https://github.com/jhatler/jhatler/issues/119)
+* Add dependabot config ([#120](https://github.com/jhatler/jhatler/issues/120)) ([5523262](https://github.com/jhatler/jhatler/commit/55232629f3d3d66c6acfc617fff23be61c05f125)), closes [#118](https://github.com/jhatler/jhatler/issues/118)
+* Use f516z33 runner for workflows ([#138](https://github.com/jhatler/jhatler/issues/138)) ([cac9360](https://github.com/jhatler/jhatler/commit/cac93606ed513dd7235854eb48090b7f0dbedffe)), closes [#133](https://github.com/jhatler/jhatler/issues/133)
+
+
+### Bug Fixes
+
+* Add github-actions support to dependabot ([#127](https://github.com/jhatler/jhatler/issues/127)) ([a9ca3da](https://github.com/jhatler/jhatler/commit/a9ca3da662ce292f50e003472481850a0cc3de27)), closes [#126](https://github.com/jhatler/jhatler/issues/126) [#118](https://github.com/jhatler/jhatler/issues/118)
+* Enable textlint and fix CONTRIBUTING.md ([#143](https://github.com/jhatler/jhatler/issues/143)) ([6c659cf](https://github.com/jhatler/jhatler/commit/6c659cfee7c460246ba6cae70c300626ed0c3968)), closes [#132](https://github.com/jhatler/jhatler/issues/132) [#130](https://github.com/jhatler/jhatler/issues/130)
+* Super-linter version in devcontainer ([#136](https://github.com/jhatler/jhatler/issues/136)) ([bdf46ee](https://github.com/jhatler/jhatler/commit/bdf46ee3bdfee376cad1f3d55bf24214de728c9f)), closes [#135](https://github.com/jhatler/jhatler/issues/135)
+* Update release-please location ([#140](https://github.com/jhatler/jhatler/issues/140)) ([8f63d6a](https://github.com/jhatler/jhatler/commit/8f63d6acd7444f72d1a7bea23c6eed09ec053940)), closes [#139](https://github.com/jhatler/jhatler/issues/139)
+* Use generic updated in release-please ([#137](https://github.com/jhatler/jhatler/issues/137)) ([8eaab00](https://github.com/jhatler/jhatler/commit/8eaab005417a6a2079da2bb2d87459f453666638)), closes [#134](https://github.com/jhatler/jhatler/issues/134)
+
 ## [0.0.9](https://github.com/jhatler/jhatler/compare/jhatler-v0.0.8...jhatler-v0.0.9) (2023-12-09)
 
 
