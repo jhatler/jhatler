@@ -1,5 +1,12 @@
 # JHatler Devcontainer Changelog
 
+## [0.0.11](https://github.com/jhatler/jhatler/compare/devcontainer-v0.0.10...devcontainer-v0.0.11) (2025-03-02)
+
+
+### Miscellaneous Chores
+
+* **devcontainer:** Synchronize undefined versions
+
 ## [0.0.10](https://github.com/jhatler/jhatler/compare/devcontainer-v0.0.9...devcontainer-v0.0.10) (2025-03-02)
 
 
