@@ -1,5 +1,12 @@
 # LaTeX Container Changelog
 
+## [0.0.11](https://github.com/jhatler/jhatler/compare/container-latex-v0.0.10...container-latex-v0.0.11) (2025-03-02)
+
+
+### Features
+
+* Use full texlive distribution ([#157](https://github.com/jhatler/jhatler/issues/157)) ([eae8645](https://github.com/jhatler/jhatler/commit/eae86451e31c151f222e70ae4052f4a3509d8956)), closes [#156](https://github.com/jhatler/jhatler/issues/156)
+
 ## [0.0.10](https://github.com/jhatler/jhatler/compare/container-latex-v0.0.9...container-latex-v0.0.10) (2025-03-02)
 
 

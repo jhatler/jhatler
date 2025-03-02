@@ -1,5 +1,20 @@
 # JHatler Root Changelog
 
+## [0.0.11](https://github.com/jhatler/jhatler/compare/jhatler-v0.0.10...jhatler-v0.0.11) (2025-03-02)
+
+
+### Features
+
+* Add muratcankaracabey/latex_cv as submodule ([#152](https://github.com/jhatler/jhatler/issues/152)) ([876626c](https://github.com/jhatler/jhatler/commit/876626ca1e70ae02c64db42e5c1d2fb5c0e4f81a)), closes [#150](https://github.com/jhatler/jhatler/issues/150)
+* Add posquit0/Awesome-CV as submodule ([#151](https://github.com/jhatler/jhatler/issues/151)) ([44ec07d](https://github.com/jhatler/jhatler/commit/44ec07d85751a75b18d833f048eaf58ff63a277c)), closes [#149](https://github.com/jhatler/jhatler/issues/149)
+* Use full texlive distribution ([#157](https://github.com/jhatler/jhatler/issues/157)) ([eae8645](https://github.com/jhatler/jhatler/commit/eae86451e31c151f222e70ae4052f4a3509d8956)), closes [#156](https://github.com/jhatler/jhatler/issues/156)
+
+
+### Bug Fixes
+
+* Import Awesome-CV and patch ([#161](https://github.com/jhatler/jhatler/issues/161)) ([28b5764](https://github.com/jhatler/jhatler/commit/28b5764246589605df65e01667971c6b6d12e574)), closes [#160](https://github.com/jhatler/jhatler/issues/160)
+* Move LaTeX class symlinks up a level ([#159](https://github.com/jhatler/jhatler/issues/159)) ([fd795f7](https://github.com/jhatler/jhatler/commit/fd795f77edbfcd7d0345b87b905ddb1535055da9)), closes [#158](https://github.com/jhatler/jhatler/issues/158)
+
 ## [0.0.10](https://github.com/jhatler/jhatler/compare/jhatler-v0.0.9...jhatler-v0.0.10) (2025-03-02)
 
 
