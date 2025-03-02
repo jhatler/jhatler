@@ -37,7 +37,12 @@
       "release-type": "simple",
       "package-name": "devcontainer",
       "component": "devcontainer",
-      "extra-files": ["devcontainer.json"]
+      "extra-files": [
+        {
+          "type": "generic",
+          "path": "devcontainer.json"
+        }
+      ]
     },
     "containers/latex": {
       "release-type": "simple",
@@ -48,7 +53,12 @@
       "release-type": "simple",
       "package-name": "devcontainer-latex",
       "component": "devcontainer-latex",
-      "extra-files": [".devcontainer/devcontainer.json"]
+      "extra-files": [
+        {
+          "type": "generic",
+          "path": ".devcontainer/devcontainer.json"
+        }
+      ]
     }
   }
 }
