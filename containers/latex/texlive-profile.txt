@@ -1,4 +1,4 @@
-selected_scheme scheme-medium
+selected_scheme scheme-full
 instopt_letter 1
 tlpdbopt_autobackup 0
 tlpdbopt_desktop_integration 0
