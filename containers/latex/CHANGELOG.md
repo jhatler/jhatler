@@ -1,5 +1,12 @@
 # LaTeX Container Changelog
 
+## [0.0.10](https://github.com/jhatler/jhatler/compare/container-latex-v0.0.9...container-latex-v0.0.10) (2025-03-02)
+
+
+### Miscellaneous Chores
+
+* **container-latex:** Synchronize undefined versions
+
 ## [0.0.9](https://github.com/jhatler/jhatler/compare/container-latex-v0.0.8...container-latex-v0.0.9) (2023-12-09)
 
 
