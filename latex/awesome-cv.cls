@@ -1,0 +1,1 @@
+modules/posquit0/awesome-cv.cls
