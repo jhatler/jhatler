@@ -13,7 +13,9 @@ permissions:
 
 jobs:
   release-please:
-    runs-on: ubuntu-latest
+    runs-on:
+      - self-hosted
+      - f516z33
     environment: main
     steps:
       - name: Process Release
