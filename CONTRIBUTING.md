@@ -2,7 +2,11 @@
 
 First of all, thank you for your desire to contribute!
 
+<!-- textlint-disable -->
+
 There may be a [TODO.txt](TODO.txt) file which may be a nice place to start.
+
+<!-- textlint-enable -->
 
 We also have a [Code of Conduct](CODE_OF_CONDUCT.md) that is worth reading!
 
