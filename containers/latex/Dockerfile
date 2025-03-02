@@ -2,8 +2,11 @@
 # Inspired by https://github.com/qdm12/latexdevcontainer
 ##
 
+#checkov:skip=CKV_DOCKER_2: No healthcheck needed
+#checkov:skip=CKV_DOCKER_3: User handled by devcontainer
+
 # Build chktex for use in final stage
-FROM mcr.microsoft.com/devcontainers/base:bookworm as chktex_build
+FROM mcr.microsoft.com/devcontainers/base:bookworm AS chktex_build
 ARG CHKTEX_VERSION=1.7.8
 ENV CHKTEX_FILE=chktex-${CHKTEX_VERSION}.tar.gz
 ENV CHKTEX_URL=http://download.savannah.gnu.org/releases/chktex/${CHKTEX_FILE}
@@ -22,13 +25,13 @@ RUN apt-get update \
  && mv chktex /usr/local/bin
 
 # Functional stage
-FROM mcr.microsoft.com/devcontainers/base:bookworm as functional
+FROM mcr.microsoft.com/devcontainers/base:bookworm AS functional
 SHELL ["/bin/bash", "-o", "pipefail", "-e", "-c"]
 ENV SHELL=/bin/bash
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Install texlive
-ARG TEXLIVE_VERSION=2023
+ARG TEXLIVE_VERSION=2024
 ARG TEXLIVE_MIRROR=http://ctan.math.illinois.edu/systems/texlive/tlnet
 ARG TEXLIVE_INSTALL_NO_CONTEXT_CACHE=1
 ARG TEXLIVE_INSTALL_NO_WELCOME=1
@@ -74,11 +77,11 @@ RUN tlmgr install \
 COPY --from=chktex_build /usr/local/bin/chktex /usr/local/bin/chktex
 
 # Testing stage - verify binaries work and have the right permissions
-FROM functional as testing
+FROM functional AS testing
 RUN tlmgr version \
  && latexmk -version \
  && texhash --version \
  && chktex --version
 
 # Final stage
-FROM functional as final
+FROM functional AS final

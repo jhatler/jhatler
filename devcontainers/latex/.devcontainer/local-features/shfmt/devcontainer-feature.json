@@ -1,8 +1,6 @@
 {
-	"$schema": "https://raw.githubusercontent.com/devcontainers/spec/main/schemas/devContainerFeature.schema.json",
-    "id": "shfmt",
-    "name": "shfmt",
-	"installsAfter": [
-		"ghcr.io/devcontainers/features/go"
-	]
+  "$schema": "https://raw.githubusercontent.com/devcontainers/spec/main/schemas/devContainerFeature.schema.json",
+  "id": "shfmt",
+  "name": "shfmt",
+  "installsAfter": ["ghcr.io/devcontainers/features/go"]
 }

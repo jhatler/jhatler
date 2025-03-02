@@ -1,4 +1,4 @@
-name: 'Devcontainer Semver Publisher'
+name: "Devcontainer Semver Publisher"
 description: |
   Sets up Docker and the Devcontainer CLI. Then builds the specified
   devcontainer configuration. Requires registry credentials for usage
@@ -7,39 +7,39 @@ description: |
 
 inputs:
   workspace:
-    description: 'Devconatiner workspace (dir with .devcontainer or devcontainer.json)'
+    description: "Devconatiner workspace (dir with .devcontainer or devcontainer.json)"
     required: true
   platforms:
-    description: 'Platforms to Build'
+    description: "Platforms to Build"
     required: true
-    default: 'linux/amd64'
+    default: "linux/amd64"
   push:
-    description: 'Push images?'
+    description: "Push images?"
     required: true
     default: false
   repository:
-    description: 'Image Repository to use for caching and pushing'
+    description: "Image Repository to use for caching and pushing"
     required: true
   semver_major:
-    description: 'Major version to use for pushed semver tags'
+    description: "Major version to use for pushed semver tags"
     required: false
   semver_minor:
-    description: 'Minor version to use for pushed semver tags'
+    description: "Minor version to use for pushed semver tags"
     required: false
   semver_patch:
-    description: 'Patch version to use for pushed semver tags'
+    description: "Patch version to use for pushed semver tags"
     required: false
   registry:
-    description: 'OCI Registry to use for caching and pushing'
+    description: "OCI Registry to use for caching and pushing"
     required: true
   username:
-    description: 'OCI Registry Username'
+    description: "OCI Registry Username"
     required: true
   password:
-    description: 'OCI Registry Password'
+    description: "OCI Registry Password"
     required: true
   cleanup:
-    description: 'Cleanup images after build?'
+    description: "Cleanup images after build?"
     required: true
     default: true
 
