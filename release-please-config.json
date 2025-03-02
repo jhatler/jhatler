@@ -1,62 +1,54 @@
 {
-    "plugins": [
-        "sentence-case",
-        {
-            "type": "linked-versions",
-            "group-name": "devenv",
-            "components": [
-                "devcontainer",
-                "container-latex",
-                "devcontainer-latex"
-            ],
-            "merge": false
-        }
-    ],
-    "bump-minor-pre-major": true,
-    "bump-patch-for-minor-pre-major": true,
-    "changelog-sections": [
-        { "type": "feat", "section": "Features" },
-        { "type": "feature", "section": "Features" },
-        { "type": "fix", "section": "Bug Fixes" },
-        { "type": "perf", "section": "Performance Improvements" },
-        { "type": "revert", "section": "Reverts" },
-        { "type": "docs", "section": "Documentation" },
-        { "type": "style", "section": "Styles", "hidden": false },
-        { "type": "chore", "section": "Miscellaneous Chores", "hidden": true },
-        { "type": "refactor", "section": "Code Refactoring", "hidden": false },
-        { "type": "test", "section": "Tests", "hidden": true },
-        { "type": "build", "section": "Build System", "hidden": true },
-        { "type": "ci", "section": "Continuous Integration", "hidden": true }
-    ],
-    "include-component-in-tag": true,
-    "include-v-in-tag": true,
-    "initial-version": "0.0.1",
-    "packages": {
-        ".": {
-            "release-type": "simple",
-            "package-name": "jhatler",
-            "component": "jhatler"
-        },
-        ".devcontainer": {
-            "release-type": "simple",
-            "package-name": "devcontainer",
-            "component": "devcontainer",
-            "extra-files": [
-                "devcontainer.json"
-            ]
-        },
-        "containers/latex": {
-            "release-type": "simple",
-            "package-name": "container-latex",
-            "component": "container-latex"
-        },
-        "devcontainers/latex": {
-            "release-type": "simple",
-            "package-name": "devcontainer-latex",
-            "component": "devcontainer-latex",
-            "extra-files": [
-                ".devcontainer/devcontainer.json"
-            ]
-        }
+  "plugins": [
+    "sentence-case",
+    {
+      "type": "linked-versions",
+      "group-name": "devenv",
+      "components": ["devcontainer", "container-latex", "devcontainer-latex"],
+      "merge": false
     }
+  ],
+  "bump-minor-pre-major": true,
+  "bump-patch-for-minor-pre-major": true,
+  "changelog-sections": [
+    { "type": "feat", "section": "Features" },
+    { "type": "feature", "section": "Features" },
+    { "type": "fix", "section": "Bug Fixes" },
+    { "type": "perf", "section": "Performance Improvements" },
+    { "type": "revert", "section": "Reverts" },
+    { "type": "docs", "section": "Documentation" },
+    { "type": "style", "section": "Styles", "hidden": false },
+    { "type": "chore", "section": "Miscellaneous Chores", "hidden": true },
+    { "type": "refactor", "section": "Code Refactoring", "hidden": false },
+    { "type": "test", "section": "Tests", "hidden": true },
+    { "type": "build", "section": "Build System", "hidden": true },
+    { "type": "ci", "section": "Continuous Integration", "hidden": true }
+  ],
+  "include-component-in-tag": true,
+  "include-v-in-tag": true,
+  "initial-version": "0.0.1",
+  "packages": {
+    ".": {
+      "release-type": "simple",
+      "package-name": "jhatler",
+      "component": "jhatler"
+    },
+    ".devcontainer": {
+      "release-type": "simple",
+      "package-name": "devcontainer",
+      "component": "devcontainer",
+      "extra-files": ["devcontainer.json"]
+    },
+    "containers/latex": {
+      "release-type": "simple",
+      "package-name": "container-latex",
+      "component": "container-latex"
+    },
+    "devcontainers/latex": {
+      "release-type": "simple",
+      "package-name": "devcontainer-latex",
+      "component": "devcontainer-latex",
+      "extra-files": [".devcontainer/devcontainer.json"]
+    }
+  }
 }

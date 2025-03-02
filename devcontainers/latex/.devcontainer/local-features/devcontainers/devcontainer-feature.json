@@ -1,8 +1,6 @@
 {
-	"$schema": "https://raw.githubusercontent.com/devcontainers/spec/main/schemas/devContainerFeature.schema.json",
-    "id": "devcontainers",
-    "name": "devcontainers",
-	"installsAfter": [
-		"ghcr.io/devcontainers/features/node"
-	]
+  "$schema": "https://raw.githubusercontent.com/devcontainers/spec/main/schemas/devContainerFeature.schema.json",
+  "id": "devcontainers",
+  "name": "devcontainers",
+  "installsAfter": ["ghcr.io/devcontainers/features/node"]
 }

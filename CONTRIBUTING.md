@@ -42,10 +42,10 @@ to be ashamed of; on the other hand, that happens regularly for all of us.
 ## Git Commits
 
 Ensuring that every contributor follows the same style conventions when creating
-git commits makes makes reviewing code, browsing the history and triaging bugs
+Git commits makes makes reviewing code, browsing the history and triaging bugs
 much easier.
 
-Generally, git commit messages have a very terse summary in the first line of the
+Generally, Git commit messages have a very terse summary in the first line of the
 commit message, followed by an empty line, followed by a more verbose description
 or a list of changed things. For examples, please refer to the excellent [How to
 Write a Git Commit Message](https://chris.beams.io/posts/git-commit/).
@@ -60,7 +60,7 @@ Specifically, **ALL** commits to this repository are expected to follow the
 The supported commit types are:
 
 - Features: "feat", "feature"
-- Bug Fixes: "fix"
+- Bugfixes: "fix"
 - Performance Improvements: "perf"
 - Reverts: "revert"
 - Documentation: "docs"
@@ -68,7 +68,7 @@ The supported commit types are:
 - Miscellaneous Chores: "chore"
 - Code Refactoring: "refactor"
 - Tests: "test"
-- Build System: "build"
+- Build tool: "build"
 - Continuous Integration: "ci"
 
 ### Commit Message Bodies
@@ -80,10 +80,10 @@ Be specific.
 A body that says "Fixes stuff" will be rejected.
 Be sure to include the following as relevant:
 
-* what the change does,
-* why you chose that approach,
-* what assumptions were made, and
-* how you know it works -- for example, which tests you ran.
+- what the change does,
+- why you chose that approach,
+- what assumptions were made, and
+- how you know it works -- for example, which tests you ran.
 
 Each line in your commit message must be 72 characters or less.
 Use newlines to wrap longer lines.
@@ -101,6 +101,7 @@ Refs: [issue]
 Where [issue] is the relevant issue identifier. Example:
 
 **GitHub Issue:**
+
 ```text
 Fixes: #1234
 Signed-off-by: ...
@@ -150,7 +151,7 @@ to receive comments on provided patches.
 If you are reviewing other contributor's code please consider the following
 when reviewing:
 
-* Be nice. Please make the review comment as constructive as possible so all
+- Be nice. Please make the review comment as constructive as possible so all
   participants will learn something from your review.
 
 As a contributor you might be asked to rewrite portions of your code to make it

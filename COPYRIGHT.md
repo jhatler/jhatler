@@ -1,6 +1,6 @@
 # Copyright and license policy
 
-Copyright (C) 2023 Jaremy Hatler
+Copyright (C) 2025 Jaremy Hatler
 
 ## Copyright
 
@@ -8,7 +8,7 @@ Copyright (C) 2023 Jaremy Hatler
 
 Copyright author must be included in:
 
-- ``LICENSE`` file in the root of the repository.
+- `LICENSE` file in the root of the repository.
 - Headers of all source code files.
 
 Each copyright holder must have their own copyright statement::
@@ -33,7 +33,7 @@ copyright).
 
 ### Attribution
 
-Attribution is not tracked via copyright, but via the ``AUTHORS`` file.
+Attribution is not tracked via copyright, but via the `AUTHORS` file.
 
 ## License
 
@@ -64,7 +64,7 @@ The DCO agreement is shown below and was retreived from
 [developercertificate.org](https://developercertificate.org/)
 on 9 April 2023.
 
-**By adding a Signed-off-by tag to your contirubutions to this git repository, you signify your agreement to the DCO.**
+**By adding a Signed-off-by tag to your contirubutions to this Git repository, you signify your agreement to the DCO.**
 
 ```text
 Developer Certificate of Origin

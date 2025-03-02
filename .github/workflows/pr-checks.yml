@@ -9,10 +9,16 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
   cancel-in-progress: true
 
+permissions: read-all
+
 jobs:
   lint:
     name: Super Lint Codebase
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: read
+      statuses: write
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
@@ -23,7 +29,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          cache: "npm"
 
       - name: Cache NPM dependencies
         uses: actions/cache@v4
@@ -41,6 +47,6 @@ jobs:
         run: cat .github/super-linter.env >> "$GITHUB_ENV"
 
       - name: Lint Codebase
-        uses: super-linter/super-linter/slim@v5.7.2
+        uses: super-linter/super-linter/slim@v7.3.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

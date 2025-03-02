@@ -3,8 +3,8 @@ name: PR Checks for LaTeX Devcontainer
 on:
   pull_request:
     paths:
-      - 'devcontainers/latex/**'
-      - '!devcontainers/latex/CHANGELOG.md'
+      - "devcontainers/latex/**"
+      - "!devcontainers/latex/CHANGELOG.md"
 
 concurrency:
   # For pull requests, cancel all currently-running jobs for this workflow

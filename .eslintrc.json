@@ -1,25 +1,20 @@
 {
-    "root": true,
-    "ignorePatterns": [
-        "!.eslintrc.json",
-        "!.release-please-manifest.json",
-        "!.devcontainer",
-        "!.vscode"
-    ],
-    "overrides": [
-        {
-            "files": [
-                "*.json"
-            ],
-            "extends": [
-                "plugin:jsonc/recommended-with-jsonc"
-            ],
-            "parser": "jsonc-eslint-parser",
-            "parserOptions": {
-                "jsonSyntax": "JSONC"
-            }
-        }
-    ],
-    "rules": {
+  "root": true,
+  "ignorePatterns": [
+    "!.eslintrc.json",
+    "!.release-please-manifest.json",
+    "!.devcontainer",
+    "!.vscode"
+  ],
+  "overrides": [
+    {
+      "files": ["*.json"],
+      "extends": ["plugin:jsonc/recommended-with-jsonc"],
+      "parser": "jsonc-eslint-parser",
+      "parserOptions": {
+        "jsonSyntax": "JSONC"
+      }
     }
+  ],
+  "rules": {}
 }
