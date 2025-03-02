@@ -19,10 +19,8 @@ jobs:
     environment: main
     steps:
       - name: Process Release
-        uses: google-github-actions/release-please-action@v4
+        uses: googleapis/release-please-action@v4
         id: release
-        with:
-          command: manifest
 
       - name: Checkout
         if: ${{ steps.release.outputs.releases_created }}
