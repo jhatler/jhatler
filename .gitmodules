@@ -1,0 +1,3 @@
+[submodule "latex/modules/muratcankaracabey"]
+	path = latex/modules/muratcankaracabey
+	url = https://github.com/muratcankaracabey/latex_cv/
