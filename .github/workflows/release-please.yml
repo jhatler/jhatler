@@ -17,7 +17,7 @@ jobs:
     environment: main
     steps:
       - name: Process Release
-        uses: google-github-actions/release-please-action@v3
+        uses: google-github-actions/release-please-action@v4
         id: release
         with:
           command: manifest
