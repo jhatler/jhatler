@@ -1,5 +1,12 @@
 # LaTeX Devcontainer Changelog
 
+## [0.0.13](https://github.com/jhatler/jhatler/compare/devcontainer-latex-v0.0.12...devcontainer-latex-v0.0.13) (2025-03-03)
+
+
+### Features
+
+* Add SPDX license identifiers as headers ([#174](https://github.com/jhatler/jhatler/issues/174)) ([7acaa64](https://github.com/jhatler/jhatler/commit/7acaa641113220db7b64e3580ca957c2bedf045d)), closes [#84](https://github.com/jhatler/jhatler/issues/84)
+
 ## [0.0.12](https://github.com/jhatler/jhatler/compare/devcontainer-latex-v0.0.11...devcontainer-latex-v0.0.12) (2025-03-03)
 
 
