@@ -1,4 +1,5 @@
----
+# Copyright (C) 2025 Jaremy Hatler
+# SPDX-License-Identifier: MIT
 name: PR Checks for Devcontainer
 on:
   pull_request:
