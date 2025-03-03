@@ -1,3 +1,4 @@
+% SPDX-License-Identifier: LPPL-1.3c
 %% Start of file `awesome-cv.cls'.
 % Awesome CV Class File
 %

@@ -1,3 +1,5 @@
+/* Copyright (C) 2025 Jaremy Hatler */
+/* SPDX-License-Identifier: CC-BY-4.0 */
 {
   "$schema": "https://raw.githubusercontent.com/devcontainers/spec/main/schemas/devContainer.schema.json",
   "image": "ghcr.io/jhatler/latex-devcontainer:v0.0.12" /* x-release-please-version */,

@@ -1,3 +1,6 @@
+# Copyright (C) 2025 Jaremy Hatler
+# SPDX-License-Identifier: MIT
+
 ##
 # Inspired by https://github.com/qdm12/latexdevcontainer
 ##

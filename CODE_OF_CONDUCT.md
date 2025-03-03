@@ -1,3 +1,4 @@
+<!-- SPDX-License-Identifier: CC-BY-4.0 -->
 <!-- textlint-disable -->
 
 # Contributor Covenant Code of Conduct

@@ -1,3 +1,5 @@
+# Copyright (C) 2025 Jaremy Hatler
+# SPDX-License-Identifier: MIT
 name: "Docker Semver Publisher"
 description: |
   Sets up Docker and Builds the specified Container. Requires registry

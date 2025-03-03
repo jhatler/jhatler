@@ -1,3 +1,6 @@
+<!-- Copyright (C) 2025 Jaremy Hatler -->
+<!-- SPDX-License-Identifier: CC-BY-4.0 -->
+
 # Contributing
 
 First of all, thank you for your desire to contribute!

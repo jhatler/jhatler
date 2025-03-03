@@ -1,3 +1,5 @@
+# Copyright (C) 2025 Jaremy Hatler
+# SPDX-License-Identifier: MIT
 name: release-please
 
 on:
