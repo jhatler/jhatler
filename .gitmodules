@@ -1,6 +1,0 @@
-[submodule "latex/modules/muratcankaracabey"]
-	path = latex/modules/muratcankaracabey
-	url = https://github.com/muratcankaracabey/latex_cv/
-[submodule "latex/modules/posquit0"]
-	path = latex/modules/posquit0
-	url = https://github.com/posquit0/Awesome-CV.git
