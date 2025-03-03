@@ -62,8 +62,8 @@
             "url": "https://raw.githubusercontent.com/devcontainers/spec/main/schemas/devContainer.schema.json"
           }
         ],
-        "latex-workshop.latexindent.path": "latexindent",
-        "latex-workshop.latexindent.args": [
+        "latex-workshop.formatting.latexindent.path": "latexindent",
+        "latex-workshop.formatting.latexindent.args": [
           "-c",
           "%DIR%/",
           "%TMPFILE%",
