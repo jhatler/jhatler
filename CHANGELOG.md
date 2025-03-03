@@ -1,5 +1,13 @@
 # JHatler Root Changelog
 
+## [0.0.13](https://github.com/jhatler/jhatler/compare/jhatler-v0.0.12...jhatler-v0.0.13) (2025-03-03)
+
+
+### Features
+
+* Add SPDX license identifiers as headers ([#174](https://github.com/jhatler/jhatler/issues/174)) ([7acaa64](https://github.com/jhatler/jhatler/commit/7acaa641113220db7b64e3580ca957c2bedf045d)), closes [#84](https://github.com/jhatler/jhatler/issues/84)
+* Fork Awesome-CV ([#172](https://github.com/jhatler/jhatler/issues/172)) ([8562860](https://github.com/jhatler/jhatler/commit/85628602062d47d40b087d0834d8335468f373c9)), closes [#169](https://github.com/jhatler/jhatler/issues/169)
+
 ## [0.0.12](https://github.com/jhatler/jhatler/compare/jhatler-v0.0.11...jhatler-v0.0.12) (2025-03-03)
 
 
