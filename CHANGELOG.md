@@ -1,5 +1,17 @@
 # JHatler Root Changelog
 
+## [0.0.12](https://github.com/jhatler/jhatler/compare/jhatler-v0.0.11...jhatler-v0.0.12) (2025-03-03)
+
+
+### Features
+
+* Add support for resume and CV links ([#163](https://github.com/jhatler/jhatler/issues/163)) ([40ff96e](https://github.com/jhatler/jhatler/commit/40ff96eecec7f6903b6dea4dbe037a04deeaf8a9)), closes [#162](https://github.com/jhatler/jhatler/issues/162)
+
+
+### Bug Fixes
+
+* Update latex-workshop devcontainer settings ([#167](https://github.com/jhatler/jhatler/issues/167)) ([fadde87](https://github.com/jhatler/jhatler/commit/fadde877fb5c4cd385b70a92923c01b866990a72)), closes [#166](https://github.com/jhatler/jhatler/issues/166)
+
 ## [0.0.11](https://github.com/jhatler/jhatler/compare/jhatler-v0.0.10...jhatler-v0.0.11) (2025-03-02)
 
 
