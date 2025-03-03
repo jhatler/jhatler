@@ -1,5 +1,12 @@
 # LaTeX Devcontainer Changelog
 
+## [0.0.12](https://github.com/jhatler/jhatler/compare/devcontainer-latex-v0.0.11...devcontainer-latex-v0.0.12) (2025-03-03)
+
+
+### Bug Fixes
+
+* Update latex-workshop devcontainer settings ([#167](https://github.com/jhatler/jhatler/issues/167)) ([fadde87](https://github.com/jhatler/jhatler/commit/fadde877fb5c4cd385b70a92923c01b866990a72)), closes [#166](https://github.com/jhatler/jhatler/issues/166)
+
 ## [0.0.11](https://github.com/jhatler/jhatler/compare/devcontainer-latex-v0.0.10...devcontainer-latex-v0.0.11) (2025-03-02)
 
 
