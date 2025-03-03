@@ -284,6 +284,14 @@
 % Usage: \homepage{<url>}
 \newcommand*{\homepage}[1]{\def\@homepage{#1}}
 
+% Defines writer's CV link (optional)
+% Usage: \cv{<url>}
+\newcommand*{\cv}[1]{\def\@cv{#1}}
+
+% Defines writer's Resume link (optional)
+% Usage: \resume{<url>}
+\newcommand*{\resume}[1]{\def\@resume{#1}}
+
 % Defines writer's github (optional)
 % Usage: \github{<github-nick>}
 \newcommand*{\github}[1]{\def\@github{#1}}
@@ -505,13 +513,25 @@
         {}%
         {%
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-          \href{http://\@homepage}{\faHome\acvHeaderIconSep\@homepage}%
+          \href{https://\@homepage}{\faHome\acvHeaderIconSep\@homepage}%
         }%
       \ifthenelse{\isundefined{\@github}}%
         {}%
         {%
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
           \href{https://github.com/\@github}{\faGithubSquare\acvHeaderIconSep\@github}%
+        }%
+        \ifthenelse{\isundefined{\@resume}}%
+          {}%
+          {%
+            \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
+            \href{https://\@resume}{\faCheckCircle\acvHeaderIconSep\@resume}%
+          }%
+        \ifthenelse{\isundefined{\@cv}}%
+        {}%
+        {%
+          \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
+          \href{https://\@cv}{\faPlusCircle\acvHeaderIconSep\@cv}%
         }%
       \ifthenelse{\isundefined{\@gitlab}}%
         {}%
