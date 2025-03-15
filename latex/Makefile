@@ -5,7 +5,7 @@
 .SECONDARY:
 
 CV := cv
-RESUMES := devops-engineer platform-engineer sre
+RESUMES := devops-engineer platform-engineer sre security-engineer
 
 DOCUMENTS := $(CV) $(RESUMES)
 
@@ -65,6 +65,7 @@ tex-summary: summary/$(DOCUMENTS).tex ## Render all summaries
 devops-engineer: ../pdf/devops-engineer.pdf ## DevOps Engineer Resume
 platform-engineer: ../pdf/platform-engineer.pdf ## Platform Engineer Resume
 sre: ../pdf/sre.pdf ## Site Reliability Engineer Resume
+security-engineer: ../pdf/security-engineer.pdf ## Security Engineer Resume
 cv: ../pdf/cv.pdf ## CV
 
 .PHONY: clean clean-pdf clean-tex clean-documents clean-education clean-experience clean-skills clean-summary

@@ -7,6 +7,7 @@ entries:
       - cv
       - devops-engineer
       - platform-engineer
+      - security-engineer
       - sre
     experiences:
       - description: |
@@ -14,6 +15,7 @@ entries:
           boot measurements, transparent multi-factor encryption, and immutability, \textbf{balancing the mitigation of
           Advanced Persistent Threats (APTs) with developer ease-of-use}.
         documents:
+          - security-engineer
           - sre
           - platform-engineer
           - devops-engineer
@@ -23,6 +25,7 @@ entries:
           OpenPGP), securing day-to-day cryptographic operations (STRIDE threat model), \textbf{improving developer
           identity assurance and reducing toil}.
         documents:
+          - security-engineer
           - sre
           - platform-engineer
           - devops-engineer
@@ -33,6 +36,7 @@ entries:
           clarified technology choices within a broader architectural strategy} focused on security, reliability,
           performance, and future scalability.
         documents:
+          - security-engineer
           - sre
           - platform-engineer
           - devops-engineer
@@ -43,6 +47,7 @@ entries:
           principles (least privilege, secure-by-default, etc.) in the infrastructure with a \textbf{shift-left AppSec
           approach} (SAST, DAST, CSPM), \textbf{effectively limiting technical debt and risk from project inception}.
         documents:
+          - security-engineer
           - devops-engineer
           - platform-engineer
           - sre
@@ -55,6 +60,7 @@ entries:
       - cv
       - devops-engineer
       - platform-engineer
+      - security-engineer
       - sre
     experiences:
       - description: |
@@ -66,6 +72,7 @@ entries:
           - platform-engineer
           - sre
           - cv
+          - security-engineer
       - description: |
           \textbf{Architected and implemented an Internal Development Platform (IDP)} with Spacelift, Ansible,
           Terraform, Docker, Devcontainers, Packer, and GitHub Actions, incorporating \textbf{shift-left security}
@@ -77,6 +84,7 @@ entries:
           - devops-engineer
           - platform-engineer
           - sre
+          - security-engineer
           - cv
       - description: |
           \textbf{Migrated all on-prem DevOps systems, data, and pipelines to AWS} through leveraging the IDP,
@@ -87,6 +95,7 @@ entries:
           - devops-engineer
           - platform-engineer
           - sre
+          - security-engineer
           - cv
       - description: |
           \textbf{Facilitated agile coaching} across engineering and PMO, fostering an iterative Plan-Do-Check-Act
@@ -97,6 +106,7 @@ entries:
           - devops-engineer
           - platform-engineer
           - sre
+          - security-engineer
           - cv
       - description: |
           \textbf{Onboarded and mentored a new DevOps Engineer} to gain deep knowledge of our diverse ecosystem
@@ -115,6 +125,7 @@ entries:
       - cv
       - devops-engineer
       - platform-engineer
+      - security-engineer
       - sre
     experiences:
       - description: |
@@ -134,6 +145,7 @@ entries:
           - devops-engineer
           - platform-engineer
           - sre
+          - security-engineer
           - cv
       - description: |
           \textbf{Established a 200-core, 1.5TB RAM bare-metal cluster} with Rancher (Kubernetes), Harvester, Datadog,
@@ -158,6 +170,7 @@ entries:
           and cost management}.
         documents:
           - platform-engineer
+          - security-engineer
           - sre
           - cv
       - description: |
@@ -169,6 +182,7 @@ entries:
           custom-build PKI and Identity solutions.
         documents:
           - platform-engineer
+          - security-engineer
           - cv
       - description: |
           \textbf{Organized and directed a 12-hour DevOps Modernization Workshop} that brought together product
@@ -182,6 +196,7 @@ entries:
           - devops-engineer
           - platform-engineer
           - sre
+          - security-engineer
           - cv
       - description: |
           \textbf{Organized and moderated a DevSecOps roundtable} with approx. 50 total participants (10 speakers, 40
@@ -191,6 +206,7 @@ entries:
           ownership of quality and security awareness during a period of rapid change.}
         documents:
           - sre
+          - security-engineer
           - cv
 
   - title: DevOps Engineer II (IT)
@@ -201,6 +217,7 @@ entries:
       - cv
       - devops-engineer
       - platform-engineer
+      - security-engineer
       - sre
     experiences:
       - description: |
@@ -212,6 +229,7 @@ entries:
           - devops-engineer
           - platform-engineer
           - sre
+          - security-engineer
           - cv
       - description: |
           \textbf{Developed custom tools to convert 300+ PlasticSCM repositories to Git}, preserving full
@@ -221,6 +239,7 @@ entries:
           - devops-engineer
           - platform-engineer
           - sre
+          - security-engineer
           - cv
       - description: |
           \textbf{Authored and delivered an on-site Git training curriculum for 30+ engineers}, enhancing collaboration
@@ -229,6 +248,7 @@ entries:
           - devops-engineer
           - platform-engineer
           - sre
+          - security-engineer
           - cv
       - description: |
           \textbf{Owned the DevOps platform during two business-unit divestitures}, leveraging Infrastructure as Code
@@ -239,6 +259,7 @@ entries:
           - devops-engineer
           - platform-engineer
           - sre
+          - security-engineer
           - cv
 
   - title: DevOps Engineer I (IT)
@@ -249,6 +270,7 @@ entries:
       - cv
       - devops-engineer
       - platform-engineer
+      - security-engineer
       - sre
     experiences:
       - description: |
@@ -259,6 +281,7 @@ entries:
         documents:
           - devops-engineer
           - platform-engineer
+          - security-engineer
           - sre
           - cv
       - description: |
@@ -268,6 +291,7 @@ entries:
         documents:
           - devops-engineer
           - platform-engineer
+          - security-engineer
           - sre
           - cv
       - description: |
@@ -277,6 +301,7 @@ entries:
         documents:
           - devops-engineer
           - platform-engineer
+          - security-engineer
           - sre
           - cv
       - description: |
@@ -287,6 +312,7 @@ entries:
         documents:
           - devops-engineer
           - platform-engineer
+          - security-engineer
           - sre
           - cv
 
@@ -298,6 +324,7 @@ entries:
       - cv
       - devops-engineer
       - platform-engineer
+      - security-engineer
       - sre
     experiences:
       - description: |
@@ -311,6 +338,7 @@ entries:
           - platform-engineer
           - devops-engineer
           - sre
+          - security-engineer
           - cv
       - description: |
           \textbf{Diagnosed and resolved critical MySQL NDB Cluster CGE crashes} (SEGFAULTS) by analyzing core dumps to
@@ -320,6 +348,7 @@ entries:
           - devops-engineer
           - platform-engineer
           - sre
+          - security-engineer
           - cv
       - description: |
           \textbf{Streamlined infrastructure management} by migrating from Chef/RightScale to CloudFormation/Puppet,
@@ -328,6 +357,12 @@ entries:
           - platform-engineer
           - devops-engineer
           - sre
+          - cv
+      - description: |
+          \textbf{Bridged technical and compliance requirements}, leading infrastructure audit prep and documentation
+          for \textbf{HIPAA/HITECH/PCI-DSS}, and producing architecture diagrams and artifacts for CTO/CIO.
+        documents:
+          - security-engineer
           - cv
       - description: |
           \textbf{Evangelized Docker for local development}, standardizing tooling across a 30-person team and
@@ -341,4 +376,5 @@ entries:
           and mitigation of high-impact regulatory compliance incidents around \textbf{HIPAA/HITECH/PCI-DSS}.
         documents:
           - sre
+          - security-engineer
           - cv
