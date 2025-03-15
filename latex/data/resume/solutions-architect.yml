@@ -1,0 +1,13 @@
+document:
+  name: solutions-architect
+  template: resume.tex.j2
+  link: resume.jhatler.com/architect
+  position: |
+    Solutions Architect{\enskip\cdotp\enskip}US Citizen{\enskip\cdotp\enskip}Eligible for Security Clearance
+  quote: |
+    ``If someone asks me how to design for the cloud, I say: design for failure and nothing will fail.''
+    --- Werner Vogels
+  summary: |
+    Platform-focused Solutions Architect combining a business-centric mindset with deep cross-domain expertise (from
+    enterprise cloud platforms down to embedded systems and wireless). Skilled at translating complex requirements into
+    cost-effective, scalable architectures that deliver tangible results for stakeholders and customers alike.

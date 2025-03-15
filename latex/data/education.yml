@@ -8,6 +8,7 @@ education:
       - platform-engineer
       - sre
       - security-engineer
+      - solutions-architect
       - cv
     experiences:
       - description: |
@@ -17,6 +18,7 @@ education:
           - platform-engineer
           - sre
           - security-engineer
+          - solutions-architect
           - cv
   - title: Honors Diploma
     institution: Kenmore High School
@@ -27,4 +29,5 @@ education:
       - platform-engineer
       - sre
       - security-engineer
+      - solutions-architect
       - cv

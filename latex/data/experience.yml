@@ -8,6 +8,7 @@ entries:
       - devops-engineer
       - platform-engineer
       - security-engineer
+      - solutions-architect
       - sre
     experiences:
       - description: |
@@ -19,6 +20,7 @@ entries:
           - sre
           - platform-engineer
           - devops-engineer
+          - solutions-architect
           - cv
       - description: |
           \textbf{Developed scripts and documentation to deploy YubiKeys across developer workflows} (FIDO2, PIV,
@@ -29,6 +31,7 @@ entries:
           - sre
           - platform-engineer
           - devops-engineer
+          - solutions-architect
           - cv
       - description: |
           \textbf{Evaluated agentic AI, vector database, GPU virtualization (MLOps), and BaaS solutions} (e.g.,
@@ -40,6 +43,7 @@ entries:
           - sre
           - platform-engineer
           - devops-engineer
+          - solutions-architect
           - cv
       - description: |
           \textbf{Engineered a turnkey internal development platform (IDP)} using AWS Amplify, CloudWatch/X-Ray,
@@ -48,6 +52,7 @@ entries:
           approach} (SAST, DAST, CSPM), \textbf{effectively limiting technical debt and risk from project inception}.
         documents:
           - security-engineer
+          - solutions-architect
           - devops-engineer
           - platform-engineer
           - sre
@@ -61,6 +66,7 @@ entries:
       - devops-engineer
       - platform-engineer
       - security-engineer
+      - solutions-architect
       - sre
     experiences:
       - description: |
@@ -71,6 +77,7 @@ entries:
           - devops-engineer
           - platform-engineer
           - sre
+          - solutions-architect
           - cv
           - security-engineer
       - description: |
@@ -84,6 +91,7 @@ entries:
           - devops-engineer
           - platform-engineer
           - sre
+          - solutions-architect
           - security-engineer
           - cv
       - description: |
@@ -95,6 +103,7 @@ entries:
           - devops-engineer
           - platform-engineer
           - sre
+          - solutions-architect
           - security-engineer
           - cv
       - description: |
@@ -106,6 +115,7 @@ entries:
           - devops-engineer
           - platform-engineer
           - sre
+          - solutions-architect
           - security-engineer
           - cv
       - description: |
@@ -116,6 +126,7 @@ entries:
           - devops-engineer
           - platform-engineer
           - sre
+          - solutions-architect
           - cv
   - title: DevOps Engineer III (IT)
     company: Laird Connectivity, Inc.
@@ -126,6 +137,7 @@ entries:
       - devops-engineer
       - platform-engineer
       - security-engineer
+      - solutions-architect
       - sre
     experiences:
       - description: |
@@ -144,6 +156,7 @@ entries:
         documents:
           - devops-engineer
           - platform-engineer
+          - solutions-architect
           - sre
           - security-engineer
           - cv
@@ -170,6 +183,7 @@ entries:
           and cost management}.
         documents:
           - platform-engineer
+          - solutions-architect
           - security-engineer
           - sre
           - cv
@@ -182,6 +196,7 @@ entries:
           custom-build PKI and Identity solutions.
         documents:
           - platform-engineer
+          - solutions-architect
           - security-engineer
           - cv
       - description: |
@@ -195,6 +210,7 @@ entries:
         documents:
           - devops-engineer
           - platform-engineer
+          - solutions-architect
           - sre
           - security-engineer
           - cv
@@ -218,6 +234,7 @@ entries:
       - devops-engineer
       - platform-engineer
       - security-engineer
+      - solutions-architect
       - sre
     experiences:
       - description: |
@@ -230,6 +247,7 @@ entries:
           - platform-engineer
           - sre
           - security-engineer
+          - solutions-architect
           - cv
       - description: |
           \textbf{Developed custom tools to convert 300+ PlasticSCM repositories to Git}, preserving full
@@ -240,6 +258,7 @@ entries:
           - platform-engineer
           - sre
           - security-engineer
+          - solutions-architect
           - cv
       - description: |
           \textbf{Authored and delivered an on-site Git training curriculum for 30+ engineers}, enhancing collaboration
@@ -249,6 +268,7 @@ entries:
           - platform-engineer
           - sre
           - security-engineer
+          - solutions-architect
           - cv
       - description: |
           \textbf{Owned the DevOps platform during two business-unit divestitures}, leveraging Infrastructure as Code
@@ -260,6 +280,7 @@ entries:
           - platform-engineer
           - sre
           - security-engineer
+          - solutions-architect
           - cv
 
   - title: DevOps Engineer I (IT)
@@ -271,6 +292,7 @@ entries:
       - devops-engineer
       - platform-engineer
       - security-engineer
+      - solutions-architect
       - sre
     experiences:
       - description: |
@@ -283,6 +305,7 @@ entries:
           - platform-engineer
           - security-engineer
           - sre
+          - solutions-architect
           - cv
       - description: |
           \textbf{Expanded DevOps systems to support 100+ newly acquired staff}, migrating data from Jira, SVN,
@@ -293,6 +316,7 @@ entries:
           - platform-engineer
           - security-engineer
           - sre
+          - solutions-architect
           - cv
       - description: |
           \textbf{Engineered containerized DevOps environments} (Docker, Packer, Terraform, Rancher) to
@@ -303,6 +327,7 @@ entries:
           - platform-engineer
           - security-engineer
           - sre
+          - solutions-architect
           - cv
       - description: |
           \textbf{Engineered cached Android BSP pipelines} (Docker, BTRFS, Jenkins) following extensive
@@ -314,6 +339,7 @@ entries:
           - platform-engineer
           - security-engineer
           - sre
+          - solutions-architect
           - cv
 
   - title: AWS Systems Administrator
@@ -325,6 +351,7 @@ entries:
       - devops-engineer
       - platform-engineer
       - security-engineer
+      - solutions-architect
       - sre
     experiences:
       - description: |
@@ -338,6 +365,7 @@ entries:
           - platform-engineer
           - devops-engineer
           - sre
+          - solutions-architect
           - security-engineer
           - cv
       - description: |
@@ -349,6 +377,7 @@ entries:
           - platform-engineer
           - sre
           - security-engineer
+          - solutions-architect
           - cv
       - description: |
           \textbf{Streamlined infrastructure management} by migrating from Chef/RightScale to CloudFormation/Puppet,
@@ -357,12 +386,14 @@ entries:
           - platform-engineer
           - devops-engineer
           - sre
+          - solutions-architect
           - cv
       - description: |
           \textbf{Bridged technical and compliance requirements}, leading infrastructure audit prep and documentation
           for \textbf{HIPAA/HITECH/PCI-DSS}, and producing architecture diagrams and artifacts for CTO/CIO.
         documents:
           - security-engineer
+          - solutions-architect
           - cv
       - description: |
           \textbf{Evangelized Docker for local development}, standardizing tooling across a 30-person team and
