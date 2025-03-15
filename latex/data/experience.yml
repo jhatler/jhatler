@@ -1,0 +1,252 @@
+entries:
+  - title: Founder \& Consultant
+    company: Enacted Services
+    location: Akron, OH
+    date: Jul. 2024 --- Present
+    documents:
+      - cv
+      - devops-engineer
+    experiences:
+      - description: |
+          \textbf{Bootstrapped a hardened, self-hosting Linux distro} (Gentoo/systemd-based) anchored in cryptographic
+          boot measurements, transparent multi-factor encryption, and immutability, \textbf{balancing the mitigation of
+          Advanced Persistent Threats (APTs) with developer ease-of-use}.
+        documents:
+          - devops-engineer
+          - cv
+      - description: |
+          \textbf{Developed scripts and documentation to deploy YubiKeys across developer workflows} (FIDO2, PIV,
+          OpenPGP), securing day-to-day cryptographic operations (STRIDE threat model), \textbf{improving developer
+          identity assurance and reducing toil}.
+        documents:
+          - devops-engineer
+          - cv
+      - description: |
+          \textbf{Evaluated agentic AI, vector database, GPU virtualization (MLOps), and BaaS solutions} (e.g.,
+          LangChain, Weaviate, Firebase) for a client's early product ideation, orchestrating PoCs that \textbf{
+          clarified technology choices within a broader architectural strategy} focused on security, reliability,
+          performance, and future scalability.
+        documents:
+          - devops-engineer
+          - cv
+      - description: |
+          \textbf{Engineered a turnkey internal development platform (IDP)} using AWS Amplify, CloudWatch/X-Ray,
+          Terraform, and GitHub Actions (GitOps), \textbf{bootstrapping observability} and instituting core security
+          principles (least privilege, secure-by-default, etc.) in the infrastructure with a \textbf{shift-left AppSec
+          approach} (SAST, DAST, CSPM), \textbf{effectively limiting technical debt and risk from project inception}.
+        documents:
+          - devops-engineer
+          - cv
+  - title: DevOps Engineer III (Engineering --- Lead)
+    company: Ezurio, Inc. (Formerly Laird Connectivity, Inc.)
+    location: Akron, OH
+    date: Jan. 2023 --- Jul. 2024
+    documents:
+      - cv
+      - devops-engineer
+    experiences:
+      - description: |
+          \textbf{Oversaw and collaborated with a transformation partner} to assess DevOps maturity
+          and \textbf{map value streams} across the engineering organization, delivering a roadmap that
+          launched a company-wide \textbf{DevOps Modernization initiative and Agile transformation}.
+        documents:
+          - devops-engineer
+          - cv
+      - description: |
+          \textbf{Architected and implemented an Internal Development Platform (IDP)} with Spacelift, Ansible,
+          Terraform, Docker, Devcontainers, Packer, and GitHub Actions, incorporating \textbf{shift-left security}
+          features (SCA, CSPM, SAST, DAST, policy-as-code), \textbf{GitOps} release management, and real-time cost
+          monitoring while ensuring \textbf{SLSA level 3} artifact provenance for end-to-end software supply chain
+          integrity.\hfill{\href{https://github.com/jhatler/janus}{\textbf{{\color{awesome}Git}Hub Project:}
+          jhatler/janus}}
+        documents:
+          - devops-engineer
+          - cv
+      - description: |
+          \textbf{Migrated all on-prem DevOps systems, data, and pipelines to AWS} through leveraging the IDP,
+          retiring risky on-prem infrastructure, \textbf{saving \$21,000/year} in infrastructure costs,
+          \textbf{reducing DevOps workload by 50\%}, and enhancing system resilience; \textbf{effectively reducing
+          high-severity, reactive issue resolution} in favor of a more deliberate, error-budget-aware approach.
+        documents:
+          - devops-engineer
+          - cv
+      - description: |
+          \textbf{Facilitated agile coaching} across engineering and PMO, fostering an iterative Plan-Do-Check-Act
+          (PDCA) approach, cultivating an Agile Community of Practice, and aligning enterprise teams around new tools
+          and processes to \textbf{ensure scaling of DevOps principles and responsiveness to evolving team needs}
+          throughout the transformation.
+        documents:
+          - devops-engineer
+          - cv
+      - description: |
+          \textbf{Onboarded and mentored a new DevOps Engineer} to gain deep knowledge of our diverse ecosystem
+          and become the primary DevOps SME for the organization, \textbf{ensuring continuity of expertise within 18
+          months}.
+        documents:
+          - devops-engineer
+          - cv
+  - title: DevOps Engineer III (IT)
+    company: Laird Connectivity, Inc.
+    location: Akron, OH
+    date: Jul. 2019 --- Jan. 2023
+    documents:
+      - cv
+      - devops-engineer
+    experiences:
+      - description: |
+          \textbf{Engineered a custom Jenkins (Groovy) framework for embedded Linux BSPs} (Buildroot/Yocto) to
+          declaratively manage build parameters and dependencies \textbf{across 1000+ Git repositories}, enabling
+          advanced versioning and branching strategies, unifying developer experience, \textbf{reducing toil, and
+          increasing deployment frequency} from the order of days to hours.
+        documents:
+          - devops-engineer
+          - cv
+      - description: |
+          \textbf{Orchestrated a comprehensive domain migration} for all DevOps systems, developing a suite of custom
+          tools for data analysis, staging/UAT setup, migration, validation, and rollback to ensure every reference
+          (documentation, 1500+ Git repos, code reviews, issues) was transparently updated and referential integrity was
+          maintained \textbf{without impacting any release cadence during corporate spin-off} (exceeding SLOs).
+        documents:
+          - devops-engineer
+          - cv
+      - description: |
+          \textbf{Established a 200-core, 1.5TB RAM bare-metal cluster} with Rancher (Kubernetes), Harvester, Datadog,
+          Docker, and iPXE to which all high-impact CI/CD workloads were migrated, \textbf{minimizing performance
+          contention and decreasing lead time for changes} through increased parallelism to align with multi-year
+          strategic goals.
+        documents:
+          - devops-engineer
+          - cv
+      - description: |
+          \textbf{Organized ``Lunch \& Learn'' sessions} averaging approx. 30 participants per event, intermixing guest
+          speakers with a series of Git Clinics I developed covering deep dives on Git features (rebasing,
+          cherry-picking, etc.) and \textbf{reinforcing DevOps best practices}.
+        documents:
+          - devops-engineer
+          - cv
+      - description: |
+          \textbf{Organized and directed a 12-hour DevOps Modernization Workshop} that brought together product
+          managers, executives, and technical leads to align on topics synthesized from the DevOps Research and
+          Assessment \textbf{(DORA)} framework, The Open Group Architecture Framework \textbf{(TOGAF)}, The Open Group
+          Service Integration Maturity Model \textbf{(OSIMM)}, the Digital Practitioner Body of Knowledge
+          \textbf{(DPBoK)}, and DevSecOps research from Carnegie Mellon University Software Engineering Institute
+          \textbf{(CMU-SEI)}, successfully \textbf{culminating in executive buy-in} to onboard a specialized
+          transformation partner \textbf{for ambitious development platform upgrades to accelerate time-to-market}.
+        documents:
+          - devops-engineer
+          - cv
+
+  - title: DevOps Engineer II (IT)
+    company: Laird Connectivity, Inc. (Laird PLC Spin-off)
+    location: Akron, OH
+    date: Apr. 2018 --- Jul. 2019
+    documents:
+      - cv
+      - devops-engineer
+    experiences:
+      - description: |
+          \textbf{Oversaw an in-house migration} of digital marketing systems to AWS, performing a comprehensive
+          architectural/security review of the existing vendor solution, \textbf{orchestrating the migration
+          without downtime}, successfully integrating Dynatrace for observability, \textbf{improving site reliability
+          under high-traffic conditions, and accelerating time-to-market for new campaigns}.
+        documents:
+          - devops-engineer
+          - cv
+      - description: |
+          \textbf{Developed custom tools to convert 300+ PlasticSCM repositories to Git}, preserving full
+          history/metadata, \textbf{saving \$5k/year} on licensing, and enabling the professional services team to
+          integrate into the central DevOps platform.
+        documents:
+          - devops-engineer
+          - cv
+      - description: |
+          \textbf{Authored and delivered an on-site Git training curriculum for 30+ engineers}, enhancing collaboration
+          with the wider engineering organization and \textbf{motivating usage of shared automation}.
+        documents:
+          - devops-engineer
+          - cv
+      - description: |
+          \textbf{Owned the DevOps platform during two business-unit divestitures}, leveraging Infrastructure as Code
+          to create parallel systems \textbf{without additional capex} and implementing Jira Service Desk to support
+          ITSM within the organization, \textbf{exceeding SLOs with zero support tickets} under Transition Service
+          Agreements.
+        documents:
+          - devops-engineer
+          - cv
+
+  - title: DevOps Engineer I (IT)
+    company: Laird PLC
+    location: Akron, OH
+    date: May. 2016 --- Apr. 2018
+    documents:
+      - cv
+      - devops-engineer
+    experiences:
+      - description: |
+          \textbf{Transformed an undocumented legacy DevOps ecosystem} into a centralized platform
+          (Jenkins, GitLab, Bugzilla, JFrog Artifactory, MediaWiki)
+          by documenting workflows, creating job aids, tightening integrations, and executing a \textbf{zero-downtime
+          P2V migration}.
+        documents:
+          - devops-engineer
+          - cv
+      - description: |
+          \textbf{Expanded DevOps systems to support 100+ newly acquired staff}, migrating data from Jira, SVN,
+          and Redmine into Bugzilla, GitLab, and other platform tools and \textbf{coaching teams to adopt standardized
+          processes}.
+        documents:
+          - devops-engineer
+          - cv
+      - description: |
+          \textbf{Engineered containerized DevOps environments} (Docker, Packer, Terraform, Rancher) to
+          \textbf{support M\&A activities and ensure business continuity}, achieving rapid recovery
+          during a hyperconverged infrastructure failure with no data loss or missed deadlines.
+        documents:
+          - devops-engineer
+          - cv
+      - description: |
+          \textbf{Engineered cached Android BSP pipelines} (Docker, BTRFS, Jenkins) following extensive
+          analysis of the Android build system and load testing of available infrastructure, successfully
+          \textbf{cutting build times by 80\% and reducing storage consumption by 40\%} while preserving artifact
+          integrity.
+        documents:
+          - devops-engineer
+          - cv
+
+  - title: AWS Systems Administrator
+    company: My1HR, Inc.
+    location: Akron, OH
+    date: Mar. 2013 --- Feb. 2016
+    documents:
+      - cv
+      - devops-engineer
+    experiences:
+      - description: |
+          \textbf{Architected and scaled a secure, multi-tier AWS infrastructure} (EC2, RDS, ELB, S3, CloudFront)
+          with \textbf{layered security controls} (IDP, DLP, SIEM) and \textbf{tightly integrated observability tools}
+          (ELK, MySQL NDB Cluster Manager, NewRelic, Zabbix, Nagios) that powered a high-traffic, multi-tenant,
+          HIPAA/HITECH/PCI-DSS compliant SaaS product which helped over \textbf{1M+ families annually} to enroll in
+          healthcare plans --- \textbf{exceeding SLAs by maintaining five-nines availability during peak seasonal
+          traffic}.
+        documents:
+          - devops-engineer
+          - cv
+      - description: |
+          \textbf{Diagnosed and resolved critical MySQL NDB Cluster CGE crashes} (SEGFAULTS) by analyzing core dumps to
+          pinpoint a memory page alignment bug and working with Oracle to deploy a patch within one week,
+          \textbf{maintaining all SLOs and SLAs during the process}.
+        documents:
+          - devops-engineer
+          - cv
+      - description: |
+          \textbf{Streamlined infrastructure management} by migrating from Chef/RightScale to CloudFormation/Puppet,
+          improving autoscaling agility by 40\% and \textbf{saving \$50k/year}.
+        documents:
+          - devops-engineer
+          - cv
+      - description: |
+          \textbf{Evangelized Docker for local development}, standardizing tooling across a 30-person team and
+          \textbf{saving 20+ hours} during developer onboarding.
+        documents:
+          - devops-engineer
+          - cv

@@ -1,0 +1,81 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, letterpaper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Color for highlights
+\colorlet{awesome}{awesome-red}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% Prevent hyphenation
+\usepackage[none]{hyphenat}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+\name{ {{- data.common.name -}} }{ {{- data.common.surname -}} }
+\position{ {{- data.document.position.strip() -}} }
+\address{ {{- data.common.address -}} }
+
+\mobile{ {{- data.common.mobile -}} }
+\email{ {{- data.common.email -}} }
+\github{ {{- data.common.github -}} }
+\resume{ {{- data.document.link -}} }
+\cv{ {{- data.common.cv -}} }
+
+\quote{ {{- data.document.quote.strip() -}} }
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal information
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Résumé~~~·~~~{{- data.common.name }} {{ data.common.surname -}}~~~·~~~Eligible for US Security Clearance}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+\input{../summary/{{- data.document.name -}}.tex}
+\input{../experience/{{- data.document.name -}}.tex}
+\input{../skills/{{- data.document.name -}}.tex}
+\input{../education/{{- data.document.name -}}.tex}
+
+
+%-------------------------------------------------------------------------------
+\end{document}

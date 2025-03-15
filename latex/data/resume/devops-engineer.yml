@@ -1,0 +1,13 @@
+document:
+  name: devops-engineer
+  template: resume.tex.j2
+  link: resume.jhatler.com/devops
+  position: |
+    DevOps Engineer{\enskip\cdotp\enskip}US Citizen{\enskip\cdotp\enskip}Eligible for Security Clearance
+  quote: |
+    ``DevOps is not a goal, but a never-ending process of continual improvement.'' --- Jez Humble
+  summary: |
+    Principal DevOps Engineer with 12+ years experience in passionately leading transformations at scale, delivering
+    high-impact migrations, and building robust CI/CD pipelines that cut deployment times and reduce cost. Adept at
+    turning legacy processes into automated solutions, driving cross-functional strategic initiatives, and mentoring
+    teams to foster a culture of collaboration and continuous improvement.

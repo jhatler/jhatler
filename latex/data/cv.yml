@@ -1,0 +1,37 @@
+document:
+  name: cv
+  template: cv.tex.j2
+  position: |
+    DevSecOps Engineer{\enskip\cdotp\enskip}Platform Engineer{\enskip\cdotp\enskip}Site Reliability
+    Engineer{\enskip\cdotp\enskip}Solutions Architect{\enskip\cdotp\enskip}US Citizen{\enskip\cdotp\enskip}Eligible
+    for Security Clearance
+  quote: |
+    ``Simple can be harder than complex. You have to work hard to get your thinking clean.'' --- Steve Jobs
+  summary: |
+    Driven technology leader adept at end-to-end modernization, migrating legacy environments to agile, automated
+    ecosystems. From container orchestration at scale to low-level networking and embedded systems, I enjoy working with
+    diverse teams to tackle problems at every layer of the stack. This breadth lets me craft well-rounded solutions that
+    meld speed, resilience, and security with ease of use.
+projects:
+  - role: Creator and Maintainer
+    title: JANUS
+    location: |
+      \href{https://github.com/jhatler/janus}{\textbf{GitHub}: jhatler/janus}
+    date: May 2023 --- Present
+    description: |
+      Internal Development Platform (IDP) targeting complex multi-cloud environments such as AI/ML workloads, IoT Device
+      Management, OS distribution and support, etc. Utilizes Spacelift, Ansible, Terraform, Packer, Docker,
+      Devcontainers, and GitHub Actions/Codespaces to provide a fully integrated, loosely coupled development
+      environment. Supports Ubuntu 8.04.4 and up to aid in migration of legacy systems to modern platforms. Integrates
+      Aikido, Codacy, and Infracost for key security, quality, and cost management features. Manages production
+      workloads at multiple businesses.
+  - role: Contributor
+    title: Gentoo Linux
+    date: 2018 --- Present
+    location: |
+      \href{https://www.gentoo.org/}{\textbf{Homepage}: gentoo.org}
+    description: |
+      Routine contributor to the Gentoo Linux project, a source-based Linux distribution with a focus on flexibility and
+      customization. Normal contributions include assisting the community troubleshoot package build failures via
+      IRC and email, triaging bugs found in my weekly builds of the Gentoo tree (covering approximately 8,000 packages
+      on amd64, arm64), and testing patches for project maintainers.

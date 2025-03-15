@@ -1,0 +1,29 @@
+\cvsection{Education}
+\begin{cventries}
+
+{%- for entry in data.education %}
+{%- if data.document.name in entry.documents %}
+%---------------------------------------------------------
+    \cventry
+        { {{- entry.title -}} }
+        { {{- entry.institution -}} }
+        { {{- entry.location -}} }
+        { {{- entry.date -}} }
+        {%- if entry.experiences %}
+        {
+            \begin{cvitems}
+        {%- for experience in entry.experiences %}
+            {%- if data.document.name in experience.documents %}
+                \item{ {{- experience.description.strip() -}} }
+            {%- endif %}
+        {%- endfor %}
+            \end{cvitems}
+        }
+        {%- else %}
+        {}
+        {%- endif %}
+{%- endif %}
+{%- endfor %}
+
+%---------------------------------------------------------
+\end{cventries}

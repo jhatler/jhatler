@@ -1,0 +1,106 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, letterpaper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Color for highlights
+\colorlet{awesome}{awesome-red}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% Tune hyphenation
+\righthyphenmin=5
+\lefthyphenmin=5
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+\name{Jaremy A.}{Hatler}
+\position{DevSecOps Engineer{\enskip\cdotp\enskip}Platform Engineer{\enskip\cdotp\enskip}Site Reliability Engineer{\enskip\cdotp\enskip}Solutions Architect{\enskip\cdotp\enskip}US Citizen{\enskip\cdotp\enskip}Eligible for Security Clearance}
+\address{967 Idaho Ave, Akron, Ohio, 44314, United States}
+
+\mobile{(+1) 234-255-2438}
+\email{root@jhatler.com}
+\github{jhatler}
+\cv{cv.jhatler.com}
+
+\quote{``Simple can be harder than complex. You have to work hard to get your thinking clean.'' --- Steve Jobs}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal information
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {~~~·~~~Jaremy A. Hatler~~~·~~~Eligible for US Security Clearance}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+\input{../summary/cv.tex}
+\input{../experience/cv.tex}
+\input{../skills/cv.tex}
+
+\cvsection{Projects}
+\begin{cventries}
+    \cventry
+        { Creator and Maintainer }
+        { JANUS }
+        { \href{https://github.com/jhatler/janus}{\textbf{GitHub}: jhatler/janus}
+ }
+        { May 2023 --- Present }
+        {
+          Internal Development Platform (IDP) targeting complex multi-cloud environments such as AI/ML workloads, IoT Device Management, OS distribution and support, etc. Utilizes Spacelift, Ansible, Terraform, Packer, Docker, Devcontainers, and GitHub Actions/Codespaces to provide a fully integrated, loosely coupled development environment. Supports Ubuntu 8.04.4 and up to aid in migration of legacy systems to modern platforms. Integrates Aikido, Codacy, and Infracost for key security, quality, and cost management features. Manages production workloads at multiple businesses.
+        }
+\end{cventries}
+\begin{cventries}
+    \cventry
+        { Contributor }
+        { Gentoo Linux }
+        { \href{https://www.gentoo.org/}{\textbf{Homepage}: gentoo.org}
+ }
+        { 2018 --- Present }
+        {
+          Routine contributor to the Gentoo Linux project, a source-based Linux distribution with a focus on flexibility and customization. Normal contributions include assisting the community troubleshoot package build failures via IRC and email, triaging bugs found in my weekly builds of the Gentoo tree (covering approximately 8,000 packages on amd64, arm64), and testing patches for project maintainers.
+        }
+\end{cventries}
+
+\input{../education/cv.tex}
+
+
+%-------------------------------------------------------------------------------
+\end{document}
