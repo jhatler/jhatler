@@ -1,0 +1,13 @@
+document:
+  name: platform-engineer
+  template: resume.tex.j2
+  link: resume.jhatler.com/platform
+  position: |
+    Platform Engineer{\enskip\cdotp\enskip}US Citizen{\enskip\cdotp\enskip}Eligible for Security Clearance
+  quote: |
+    ``Platforms are about creating ecosystems and encouraging others to build on top of them.'' --- Tim O'Reilly
+  summary: |
+    Forward-thinking Platform Engineer skilled at creating scalable, self-service systems that empower dev
+    teams to experiment and innovate while maintaining security and compliance. With a focus on automated
+    infrastructure, cost governance, consistent developer experiences, and shift-left security practices,
+    I transform complex environments into hardened, highly automated, self-service platforms reducing manual effort.

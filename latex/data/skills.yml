@@ -3,6 +3,8 @@ categories:
     documents:
       - name: devops-engineer
         sort: 1
+      - name: platform-engineer
+        sort: 1
       - name: cv
         sort: 1
     skills:
@@ -10,16 +12,22 @@ categories:
         documents:
           - name: devops-engineer
             sort: 1
+          - name: platform-engineer
+            sort: 4
           - name: cv
             sort: 2
       - name: Cloud Security Posture Management
         documents:
+          - name: platform-engineer
+            sort: 9
           - name: cv
             sort: 17
       - name: Cost Optimization
         documents:
           - name: devops-engineer
             sort: 12
+          - name: platform-engineer
+            sort: 7
           - name: cv
             sort: 11
       - name: Creative Problem Solving
@@ -30,22 +38,30 @@ categories:
         documents:
           - name: devops-engineer
             sort: 11
+          - name: platform-engineer
+            sort: 10
           - name: cv
             sort: 9
       - name: Enterprise Architecture \& Roadmapping
         documents:
+          - name: platform-engineer
+            sort: 2
           - name: cv
             sort: 4
       - name: High-Impact Migrations \& Transformations
         documents:
           - name: devops-engineer
             sort: 4
+          - name: platform-engineer
+            sort: 6
           - name: cv
             sort: 6
       - name: Process Optimization and Automation
         documents:
           - name: devops-engineer
             sort: 2
+          - name: platform-engineer
+            sort: 5
           - name: cv
             sort: 3
       - name: Root Cause Analysis \& Incident Triage
@@ -64,10 +80,14 @@ categories:
         documents:
           - name: devops-engineer
             sort: 3
+          - name: platform-engineer
+            sort: 8
           - name: cv
             sort: 5
       - name: Stakeholder \& Vendor Management
         documents:
+          - name: platform-engineer
+            sort: 11
           - name: cv
             sort: 12
       - name: Strategic \& Project Planning
@@ -78,18 +98,24 @@ categories:
         documents:
           - name: devops-engineer
             sort: 7
+          - name: platform-engineer
+            sort: 1
           - name: cv
             sort: 1
       - name: Technical Leadership and Mentoring
         documents:
           - name: devops-engineer
             sort: 10
+          - name: platform-engineer
+            sort: 12
           - name: cv
             sort: 10
       - name: Value Stream Mapping \& Workflow Engineering
         documents:
           - name: devops-engineer
             sort: 8
+          - name: platform-engineer
+            sort: 3
           - name: cv
             sort: 8
       - name: Zero-Trust \& Security-First Architecture
@@ -101,6 +127,8 @@ categories:
     documents:
       - name: devops-engineer
         sort: 7
+      - name: platform-engineer
+        sort: 7
       - name: cv
         sort: 6
     skills:
@@ -108,47 +136,63 @@ categories:
         documents:
           - name: devops-engineer
             sort: 3
+          - name: platform-engineer
+            sort: 4
           - name: cv
             sort: 3
       - name: C\#
         documents:
           - name: devops-engineer
             sort: 15
+          - name: platform-engineer
+            sort: 12
           - name: cv
             sort: 7
       - name: C/C++
         documents:
           - name: devops-engineer
             sort: 14
+          - name: platform-engineer
+            sort: 6
           - name: cv
             sort: 11
       - name: Cucumber
         documents:
           - name: devops-engineer
             sort: 8
+          - name: platform-engineer
+            sort: 14
           - name: cv
             sort: 14
       - name: Go
         documents:
           - name: devops-engineer
             sort: 7
+          - name: platform-engineer
+            sort: 2
           - name: cv
             sort: 5
       - name: Groovy
         documents:
           - name: devops-engineer
             sort: 4
+          - name: platform-engineer
+            sort: 7
           - name: cv
             sort: 9
       - name: JS/TypeScript
         documents:
           - name: devops-engineer
             sort: 11
+          - name: platform-engineer
+            sort: 10
           - name: cv
             sort: 4
       - name: LaTeX
         documents:
           - name: devops-engineer
+            sort: 19
+          - name: platform-engineer
             sort: 19
           - name: cv
             sort: 19
@@ -156,17 +200,23 @@ categories:
         documents:
           - name: devops-engineer
             sort: 17
+          - name: platform-engineer
+            sort: 17
           - name: cv
             sort: 17
       - name: Make
         documents:
           - name: devops-engineer
             sort: 6
+          - name: platform-engineer
+            sort: 8
           - name: cv
             sort: 10
       - name: Pascal
         documents:
           - name: devops-engineer
+            sort: 18
+          - name: platform-engineer
             sort: 18
           - name: cv
             sort: 18
@@ -174,11 +224,15 @@ categories:
         documents:
           - name: devops-engineer
             sort: 12
+          - name: platform-engineer
+            sort: 11
           - name: cv
             sort: 12
       - name: PHP
         documents:
           - name: devops-engineer
+            sort: 13
+          - name: platform-engineer
             sort: 13
           - name: cv
             sort: 13
@@ -186,11 +240,15 @@ categories:
         documents:
           - name: devops-engineer
             sort: 1
+          - name: platform-engineer
+            sort: 1
           - name: cv
             sort: 1
       - name: Ruby
         documents:
           - name: devops-engineer
+            sort: 5
+          - name: platform-engineer
             sort: 5
           - name: cv
             sort: 6
@@ -198,17 +256,23 @@ categories:
         documents:
           - name: devops-engineer
             sort: 2
+          - name: platform-engineer
+            sort: 3
           - name: cv
             sort: 2
       - name: SQL
         documents:
           - name: devops-engineer
             sort: 10
+          - name: platform-engineer
+            sort: 9
           - name: cv
             sort: 8
       - name: x86 Assembly
         documents:
           - name: devops-engineer
+            sort: 16
+          - name: platform-engineer
             sort: 16
           - name: cv
             sort: 16
@@ -217,11 +281,15 @@ categories:
     documents:
       - name: devops-engineer
         sort: 3
+      - name: platform-engineer
+        sort: 2
       - name: cv
         sort: 5
     skills:
       - name: Ceph/Rook
         documents:
+          - name: platform-engineer
+            sort: 13
           - name: devops-engineer
             sort: 15
           - name: cv
@@ -230,53 +298,71 @@ categories:
         documents:
           - name: devops-engineer
             sort: 4
+          - name: platform-engineer
+            sort: 4
           - name: cv
             sort: 8
       - name: Dell EMC
         documents:
           - name: devops-engineer
             sort: 13
+          - name: platform-engineer
+            sort: 11
           - name: cv
             sort: 13
       - name: etcd
         documents:
           - name: devops-engineer
             sort: 5
+          - name: platform-engineer
+            sort: 3
           - name: cv
             sort: 4
       - name: GlusterFS
         documents:
           - name: devops-engineer
             sort: 16
+          - name: platform-engineer
+            sort: 15
           - name: cv
             sort: 17
       - name: Harbor
         documents:
           - name: devops-engineer
             sort: 19
+          - name: platform-engineer
+            sort: 17
           - name: cv
             sort: 19
       - name: HashiCorp Vault
         documents:
           - name: devops-engineer
             sort: 6
+          - name: platform-engineer
+            sort: 19
           - name: cv
             sort: 5
       - name: Hyper-V
         documents:
           - name: devops-engineer
             sort: 12
+          - name: platform-engineer
+            sort: 10
           - name: cv
             sort: 12
       - name: Keycloak
         documents:
           - name: devops-engineer
             sort: 7
+          - name: platform-engineer
+            sort: 20
           - name: cv
             sort: 6
       - name: Kubernetes
         documents:
           - name: devops-engineer
+            sort: 1
+          - name: platform-engineer
             sort: 1
           - name: cv
             sort: 1
@@ -284,41 +370,55 @@ categories:
         documents:
           - name: devops-engineer
             sort: 9
+          - name: platform-engineer
+            sort: 7
           - name: cv
             sort: 9
       - name: Longhorn
         documents:
           - name: devops-engineer
             sort: 17
+          - name: platform-engineer
+            sort: 14
           - name: cv
             sort: 16
       - name: MetalLB
         documents:
           - name: devops-engineer
             sort: 18
+          - name: platform-engineer
+            sort: 16
           - name: cv
             sort: 18
       - name: NetApp
         documents:
           - name: devops-engineer
             sort: 14
+          - name: platform-engineer
+            sort: 12
           - name: cv
             sort: 14
       - name: Portus
         documents:
           - name: devops-engineer
             sort: 20
+          - name: platform-engineer
+            sort: 18
           - name: cv
             sort: 20
       - name: Proxmox
         documents:
           - name: devops-engineer
             sort: 10
+          - name: platform-engineer
+            sort: 8
           - name: cv
             sort: 10
       - name: Rancher
         documents:
           - name: devops-engineer
+            sort: 2
+          - name: platform-engineer
             sort: 2
           - name: cv
             sort: 3
@@ -326,18 +426,24 @@ categories:
         documents:
           - name: devops-engineer
             sort: 3
+          - name: platform-engineer
+            sort: 5
           - name: cv
             sort: 7
       - name: VMware vSphere
         documents:
           - name: devops-engineer
             sort: 8
+          - name: platform-engineer
+            sort: 6
           - name: cv
             sort: 2
       - name: Xen
         documents:
           - name: devops-engineer
             sort: 11
+          - name: platform-engineer
+            sort: 9
           - name: cv
             sort: 11
 
@@ -345,6 +451,8 @@ categories:
     documents:
       - name: devops-engineer
         sort: 2
+      - name: platform-engineer
+        sort: 6
       - name: cv
         sort: 4
     skills:
@@ -352,11 +460,15 @@ categories:
         documents:
           - name: devops-engineer
             sort: 6
+          - name: platform-engineer
+            sort: 6
           - name: cv
             sort: 6
       - name: Chef
         documents:
           - name: devops-engineer
+            sort: 11
+          - name: platform-engineer
             sort: 11
           - name: cv
             sort: 11
@@ -364,29 +476,39 @@ categories:
         documents:
           - name: devops-engineer
             sort: 12
+          - name: platform-engineer
+            sort: 12
           - name: cv
             sort: 12
       - name: Docker
         documents:
           - name: devops-engineer
             sort: 1
+          - name: platform-engineer
+            sort: 2
           - name: cv
             sort: 1
       - name: GitHub Actions
         documents:
           - name: devops-engineer
             sort: 3
+          - name: platform-engineer
+            sort: 4
           - name: cv
             sort: 3
       - name: GitLab CI/CD
         documents:
           - name: devops-engineer
             sort: 4
+          - name: platform-engineer
+            sort: 5
           - name: cv
             sort: 4
       - name: Helm
         documents:
           - name: devops-engineer
+            sort: 7
+          - name: platform-engineer
             sort: 7
           - name: cv
             sort: 7
@@ -394,11 +516,15 @@ categories:
         documents:
           - name: devops-engineer
             sort: 5
+          - name: platform-engineer
+            sort: 3
           - name: cv
             sort: 5
       - name: Packer
         documents:
           - name: devops-engineer
+            sort: 8
+          - name: platform-engineer
             sort: 8
           - name: cv
             sort: 8
@@ -406,17 +532,23 @@ categories:
         documents:
           - name: devops-engineer
             sort: 10
+          - name: platform-engineer
+            sort: 10
           - name: cv
             sort: 10
       - name: Terraform
         documents:
           - name: devops-engineer
             sort: 2
+          - name: platform-engineer
+            sort: 1
           - name: cv
             sort: 2
       - name: Vagrant
         documents:
           - name: devops-engineer
+            sort: 9
+          - name: platform-engineer
             sort: 9
           - name: cv
             sort: 9
@@ -425,6 +557,8 @@ categories:
     documents:
       - name: devops-engineer
         sort: 6
+      - name: platform-engineer
+        sort: 3
       - name: cv
         sort: 7
     skills:
@@ -434,11 +568,15 @@ categories:
             sort: 4
           - name: devops-engineer
             sort: 4
+          - name: platform-engineer
+            sort: 4
       - name: Dynatrace
         documents:
           - name: cv
             sort: 5
           - name: devops-engineer
+            sort: 5
+          - name: platform-engineer
             sort: 5
       - name: ELK Stack
         documents:
@@ -446,11 +584,15 @@ categories:
             sort: 3
           - name: devops-engineer
             sort: 3
+          - name: platform-engineer
+            sort: 3
       - name: Grafana
         documents:
           - name: cv
             sort: 2
           - name: devops-engineer
+            sort: 2
+          - name: platform-engineer
             sort: 2
       - name: Icinga
         documents:
@@ -458,11 +600,15 @@ categories:
             sort: 7
           - name: devops-engineer
             sort: 7
+          - name: platform-engineer
+            sort: 7
       - name: Nagios
         documents:
           - name: cv
             sort: 6
           - name: devops-engineer
+            sort: 6
+          - name: platform-engineer
             sort: 6
       - name: Prometheus
         documents:
@@ -470,16 +616,22 @@ categories:
             sort: 1
           - name: devops-engineer
             sort: 1
+          - name: platform-engineer
+            sort: 1
       - name: Zabbix
         documents:
           - name: cv
             sort: 8
           - name: devops-engineer
             sort: 8
+          - name: platform-engineer
+            sort: 8
 
   - name: Stack
     documents:
       - name: devops-engineer
+        sort: 8
+      - name: platform-engineer
         sort: 8
       - name: cv
         sort: 8
@@ -490,88 +642,118 @@ categories:
             sort: 5
           - name: devops-engineer
             sort: 2
+          - name: platform-engineer
+            sort: 6
       - name: Appwrite
         documents:
           - name: cv
             sort: 8
           - name: devops-engineer
             sort: 13
+          - name: platform-engineer
+            sort: 8
       - name: CSS
         documents:
           - name: cv
             sort: 12
           - name: devops-engineer
             sort: 9
+          - name: platform-engineer
+            sort: 11
       - name: HAProxy
         documents:
           - name: cv
             sort: 4
           - name: devops-engineer
             sort: 3
+          - name: platform-engineer
+            sort: 7
       - name: HTML
         documents:
           - name: cv
             sort: 11
           - name: devops-engineer
             sort: 8
+          - name: platform-engineer
+            sort: 10
       - name: JavaScript
         documents:
           - name: cv
             sort: 10
           - name: devops-engineer
             sort: 10
+          - name: platform-engineer
+            sort: 12
       - name: Microsoft SQL Server
         documents:
           - name: cv
             sort: 7
           - name: devops-engineer
             sort: 6
+          - name: platform-engineer
+            sort: 4
       - name: MySQL
         documents:
           - name: cv
             sort: 3
           - name: devops-engineer
             sort: 4
+          - name: platform-engineer
+            sort: 2
       - name: Nginx
         documents:
           - name: cv
             sort: 1
           - name: devops-engineer
             sort: 1
+          - name: platform-engineer
+            sort: 5
       - name: PostgreSQL
         documents:
           - name: cv
             sort: 2
           - name: devops-engineer
             sort: 5
+          - name: platform-engineer
+            sort: 1
       - name: Redis
         documents:
           - name: cv
             sort: 6
           - name: devops-engineer
             sort: 7
+          - name: platform-engineer
+            sort: 3
       - name: Svelte
         documents:
           - name: cv
             sort: 14
           - name: devops-engineer
             sort: 12
+          - name: platform-engineer
+            sort: 14
       - name: Vue.js
         documents:
           - name: cv
             sort: 13
           - name: devops-engineer
             sort: 11
+          - name: platform-engineer
+            sort: 13
       - name: Weaviate
         documents:
           - name: cv
             sort: 9
           - name: devops-engineer
             sort: 14
+          - name: platform-engineer
+            sort: 9
 
   - name: AWS
     documents:
       - name: devops-engineer
+        sort: 4
+      - name: platform-engineer
         sort: 4
       - name: cv
         sort: 2
@@ -582,11 +764,15 @@ categories:
             sort: 25
           - name: devops-engineer
             sort: 25
+          - name: platform-engineer
+            sort: 25
       - name: API Gateway
         documents:
           - name: cv
             sort: 17
           - name: devops-engineer
+            sort: 21
+          - name: platform-engineer
             sort: 21
       - name: AppConfig
         documents:
@@ -594,11 +780,15 @@ categories:
             sort: 24
           - name: devops-engineer
             sort: 22
+          - name: platform-engineer
+            sort: 24
       - name: CloudFormation
         documents:
           - name: cv
             sort: 1
           - name: devops-engineer
+            sort: 1
+          - name: platform-engineer
             sort: 1
       - name: CloudFront
         documents:
@@ -606,47 +796,63 @@ categories:
             sort: 16
           - name: devops-engineer
             sort: 16
+          - name: platform-engineer
+            sort: 15
       - name: CloudTrail
         documents:
           - name: cv
             sort: 12
           - name: devops-engineer
             sort: 9
+          - name: platform-engineer
+            sort: 11
       - name: CloudWatch
         documents:
           - name: cv
             sort: 6
           - name: devops-engineer
             sort: 2
+          - name: platform-engineer
+            sort: 6
       - name: Cognito
         documents:
           - name: cv
             sort: 23
           - name: devops-engineer
             sort: 24
+          - name: platform-engineer
+            sort: 23
       - name: Config
         documents:
           - name: cv
             sort: 13
           - name: devops-engineer
             sort: 10
+          - name: platform-engineer
+            sort: 12
       - name: Control Tower/Organizations
         documents:
           - name: cv
             sort: 22
           - name: devops-engineer
             sort: 23
+          - name: platform-engineer
+            sort: 22
       - name: DynamoDB
         documents:
           - name: cv
             sort: 10
           - name: devops-engineer
             sort: 15
+          - name: platform-engineer
+            sort: 9
       - name: EC2
         documents:
           - name: cv
             sort: 4
           - name: devops-engineer
+            sort: 3
+          - name: platform-engineer
             sort: 3
       - name: ECS/EKS/ECR/Fargate
         documents:
@@ -654,11 +860,15 @@ categories:
             sort: 7
           - name: devops-engineer
             sort: 7
+          - name: platform-engineer
+            sort: 7
       - name: EFS
         documents:
           - name: cv
             sort: 26
           - name: devops-engineer
+            sort: 26
+          - name: platform-engineer
             sort: 26
       - name: ElastiCache
         documents:
@@ -666,17 +876,23 @@ categories:
             sort: 21
           - name: devops-engineer
             sort: 20
+          - name: platform-engineer
+            sort: 20
       - name: IAM
         documents:
           - name: cv
             sort: 3
           - name: devops-engineer
             sort: 6
+          - name: platform-engineer
+            sort: 5
       - name: KMS
         documents:
           - name: cv
             sort: 18
           - name: devops-engineer
+            sort: 17
+          - name: platform-engineer
             sort: 17
       - name: Lambda
         documents:
@@ -684,23 +900,31 @@ categories:
             sort: 8
           - name: devops-engineer
             sort: 11
+          - name: platform-engineer
+            sort: 16
       - name: RDS/Aurora
         documents:
           - name: cv
             sort: 9
           - name: devops-engineer
             sort: 14
+          - name: platform-engineer
+            sort: 8
       - name: Route 53
         documents:
           - name: cv
             sort: 11
           - name: devops-engineer
             sort: 8
+          - name: platform-engineer
+            sort: 10
       - name: S3
         documents:
           - name: cv
             sort: 5
           - name: devops-engineer
+            sort: 4
+          - name: platform-engineer
             sort: 4
       - name: Secrets Manager
         documents:
@@ -708,11 +932,15 @@ categories:
             sort: 14
           - name: devops-engineer
             sort: 12
+          - name: platform-engineer
+            sort: 14
       - name: SES
         documents:
           - name: cv
             sort: 27
           - name: devops-engineer
+            sort: 27
+          - name: platform-engineer
             sort: 27
       - name: SNS/SQS
         documents:
@@ -720,11 +948,15 @@ categories:
             sort: 19
           - name: devops-engineer
             sort: 18
+          - name: platform-engineer
+            sort: 18
       - name: Systems Manager
         documents:
           - name: cv
             sort: 15
           - name: devops-engineer
+            sort: 13
+          - name: platform-engineer
             sort: 13
       - name: VPC
         documents:
@@ -732,16 +964,22 @@ categories:
             sort: 2
           - name: devops-engineer
             sort: 5
+          - name: platform-engineer
+            sort: 2
       - name: X-Ray
         documents:
           - name: cv
             sort: 20
           - name: devops-engineer
             sort: 19
+          - name: platform-engineer
+            sort: 19
 
   - name: GCP
     documents:
       - name: devops-engineer
+        sort: 5
+      - name: platform-engineer
         sort: 5
       - name: cv
         sort: 3
@@ -752,59 +990,79 @@ categories:
             sort: 7
           - name: devops-engineer
             sort: 7
+          - name: platform-engineer
+            sort: 8
       - name: App Engine
         documents:
           - name: cv
             sort: 11
           - name: devops-engineer
             sort: 11
+          - name: platform-engineer
+            sort: 5
       - name: Cloud APIs
         documents:
           - name: cv
             sort: 12
           - name: devops-engineer
             sort: 8
+          - name: platform-engineer
+            sort: 12
       - name: Cloud Functions
         documents:
           - name: cv
             sort: 6
           - name: devops-engineer
             sort: 3
+          - name: platform-engineer
+            sort: 7
       - name: Cloud Pub/Sub
         documents:
           - name: cv
             sort: 8
           - name: devops-engineer
             sort: 12
+          - name: platform-engineer
+            sort: 9
       - name: Cloud Run
         documents:
           - name: cv
             sort: 5
           - name: devops-engineer
             sort: 2
+          - name: platform-engineer
+            sort: 6
       - name: Cloud Storage
         documents:
           - name: cv
             sort: 3
           - name: devops-engineer
             sort: 5
+          - name: platform-engineer
+            sort: 4
       - name: Compute Engine
         documents:
           - name: cv
             sort: 2
           - name: devops-engineer
             sort: 4
+          - name: platform-engineer
+            sort: 2
       - name: IAM
         documents:
           - name: cv
             sort: 9
           - name: devops-engineer
             sort: 9
+          - name: platform-engineer
+            sort: 10
       - name: Identity Platform
         documents:
           - name: cv
             sort: 13
           - name: devops-engineer
+            sort: 13
+          - name: platform-engineer
             sort: 13
       - name: Kubernetes Engine (GKE)
         documents:
@@ -812,17 +1070,23 @@ categories:
             sort: 1
           - name: devops-engineer
             sort: 1
+          - name: platform-engineer
+            sort: 1
       - name: Secret Manager
         documents:
           - name: cv
             sort: 10
           - name: devops-engineer
             sort: 10
+          - name: platform-engineer
+            sort: 11
       - name: Shielded VMs
         documents:
           - name: cv
             sort: 14
           - name: devops-engineer
+            sort: 14
+          - name: platform-engineer
             sort: 14
       - name: VPC
         documents:
@@ -830,3 +1094,5 @@ categories:
             sort: 4
           - name: devops-engineer
             sort: 6
+          - name: platform-engineer
+            sort: 3
