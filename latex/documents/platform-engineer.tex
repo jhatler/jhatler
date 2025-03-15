@@ -32,24 +32,24 @@
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
-% Tune hyphenation
-\righthyphenmin=5
-\lefthyphenmin=5
+% Prevent hyphenation
+\usepackage[none]{hyphenat}
 
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
-\name{ {{- data.common.name -}} }{ {{- data.common.surname -}} }
-\position{ {{- data.document.position.replace('\n', ' ').strip() -}} }
-\address{ {{- data.common.address -}} }
+\name{Jaremy A.}{Hatler}
+\position{Platform Engineer{\enskip\cdotp\enskip}US Citizen{\enskip\cdotp\enskip}Eligible for Security Clearance}
+\address{967 Idaho Ave, Akron, Ohio, 44314, United States}
 
-\mobile{ {{- data.common.mobile -}} }
-\email{ {{- data.common.email -}} }
-\github{ {{- data.common.github -}} }
-\cv{ {{- data.common.cv -}} }
+\mobile{(+1) 234-255-2438}
+\email{root@jhatler.com}
+\github{jhatler}
+\resume{resume.jhatler.com/platform}
+\cv{cv.jhatler.com}
 
-\quote{ {{- data.document.quote.replace('\n', ' ').strip() -}} }
+\quote{``Platforms are about creating ecosystems and encouraging others to build on top of them.'' --- Tim O'Reilly}
 
 
 %-------------------------------------------------------------------------------
@@ -63,7 +63,7 @@
 % Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
-  {~~~·~~~{{- data.common.name }} {{ data.common.surname -}}~~~·~~~Eligible for US Security Clearance}
+  {Résumé~~~·~~~Jaremy A. Hatler~~~·~~~Eligible for US Security Clearance}
   {\thepage}
 
 
@@ -71,26 +71,10 @@
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-\input{../summary/{{- data.document.name -}}.tex}
-\input{../experience/{{- data.document.name -}}.tex}
-\input{../skills/{{- data.document.name -}}.tex}
-
-\cvsection{Projects}
-
-{%- for project in data.projects %}
-\begin{cventries}
-    \cventry
-        { {{ project.role }} }
-        { {{ project.title }} }
-        { {{ project.location }} }
-        { {{ project.date }} }
-        {
-          {{ project.description.replace('\n', ' ').strip() }}
-        }
-\end{cventries}
-{%- endfor %}
-
-\input{../education/{{- data.document.name -}}.tex}
+\input{../summary/platform-engineer.tex}
+\input{../experience/platform-engineer.tex}
+\input{../skills/platform-engineer.tex}
+\input{../education/platform-engineer.tex}
 
 
 %-------------------------------------------------------------------------------

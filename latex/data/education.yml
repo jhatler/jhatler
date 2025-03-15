@@ -5,12 +5,14 @@ education:
     date: 2011 --- 2015
     documents:
       - devops-engineer
+      - platform-engineer
       - cv
     experiences:
       - description: |
           President's List (4.0 GPA) --- 5 semesters
         documents:
           - devops-engineer
+          - platform-engineer
           - cv
   - title: Honors Diploma
     institution: Kenmore High School
@@ -18,4 +20,5 @@ education:
     date: 2013
     documents:
       - devops-engineer
+      - platform-engineer
       - cv
