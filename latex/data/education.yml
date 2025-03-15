@@ -7,6 +7,7 @@ education:
       - devops-engineer
       - platform-engineer
       - sre
+      - security-engineer
       - cv
     experiences:
       - description: |
@@ -15,6 +16,7 @@ education:
           - devops-engineer
           - platform-engineer
           - sre
+          - security-engineer
           - cv
   - title: Honors Diploma
     institution: Kenmore High School
@@ -24,4 +26,5 @@ education:
       - devops-engineer
       - platform-engineer
       - sre
+      - security-engineer
       - cv
