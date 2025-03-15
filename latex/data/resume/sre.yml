@@ -1,0 +1,13 @@
+document:
+  name: sre
+  template: resume.tex.j2
+  link: resume.jhatler.com/sre
+  position: |
+    Site Reliability Engineer{\enskip\cdotp\enskip}US Citizen{\enskip\cdotp\enskip}Eligible for Security Clearance
+  quote: |
+    ``You cannot manage what you cannot measure.'' --- W. Edwards Deming
+  summary: |
+    Proactive Site Reliability Engineer with a proven track record in automating critical infrastructure, leading
+    high-pressure/large-scale incident response, and ensuring system resilience. Specializes in designing scalable,
+    self-service platforms that streamline workflows and integrate cutting-edge shift-left security and monitoring
+    practices.

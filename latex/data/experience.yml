@@ -7,12 +7,14 @@ entries:
       - cv
       - devops-engineer
       - platform-engineer
+      - sre
     experiences:
       - description: |
           \textbf{Bootstrapped a hardened, self-hosting Linux distro} (Gentoo/systemd-based) anchored in cryptographic
           boot measurements, transparent multi-factor encryption, and immutability, \textbf{balancing the mitigation of
           Advanced Persistent Threats (APTs) with developer ease-of-use}.
         documents:
+          - sre
           - platform-engineer
           - devops-engineer
           - cv
@@ -21,6 +23,7 @@ entries:
           OpenPGP), securing day-to-day cryptographic operations (STRIDE threat model), \textbf{improving developer
           identity assurance and reducing toil}.
         documents:
+          - sre
           - platform-engineer
           - devops-engineer
           - cv
@@ -30,6 +33,7 @@ entries:
           clarified technology choices within a broader architectural strategy} focused on security, reliability,
           performance, and future scalability.
         documents:
+          - sre
           - platform-engineer
           - devops-engineer
           - cv
@@ -41,6 +45,7 @@ entries:
         documents:
           - devops-engineer
           - platform-engineer
+          - sre
           - cv
   - title: DevOps Engineer III (Engineering --- Lead)
     company: Ezurio, Inc. (Formerly Laird Connectivity, Inc.)
@@ -50,6 +55,7 @@ entries:
       - cv
       - devops-engineer
       - platform-engineer
+      - sre
     experiences:
       - description: |
           \textbf{Oversaw and collaborated with a transformation partner} to assess DevOps maturity
@@ -58,6 +64,7 @@ entries:
         documents:
           - devops-engineer
           - platform-engineer
+          - sre
           - cv
       - description: |
           \textbf{Architected and implemented an Internal Development Platform (IDP)} with Spacelift, Ansible,
@@ -69,6 +76,7 @@ entries:
         documents:
           - devops-engineer
           - platform-engineer
+          - sre
           - cv
       - description: |
           \textbf{Migrated all on-prem DevOps systems, data, and pipelines to AWS} through leveraging the IDP,
@@ -78,6 +86,7 @@ entries:
         documents:
           - devops-engineer
           - platform-engineer
+          - sre
           - cv
       - description: |
           \textbf{Facilitated agile coaching} across engineering and PMO, fostering an iterative Plan-Do-Check-Act
@@ -87,6 +96,7 @@ entries:
         documents:
           - devops-engineer
           - platform-engineer
+          - sre
           - cv
       - description: |
           \textbf{Onboarded and mentored a new DevOps Engineer} to gain deep knowledge of our diverse ecosystem
@@ -95,6 +105,7 @@ entries:
         documents:
           - devops-engineer
           - platform-engineer
+          - sre
           - cv
   - title: DevOps Engineer III (IT)
     company: Laird Connectivity, Inc.
@@ -104,6 +115,7 @@ entries:
       - cv
       - devops-engineer
       - platform-engineer
+      - sre
     experiences:
       - description: |
           \textbf{Engineered a custom Jenkins (Groovy) framework for embedded Linux BSPs} (Buildroot/Yocto) to
@@ -121,6 +133,7 @@ entries:
         documents:
           - devops-engineer
           - platform-engineer
+          - sre
           - cv
       - description: |
           \textbf{Established a 200-core, 1.5TB RAM bare-metal cluster} with Rancher (Kubernetes), Harvester, Datadog,
@@ -129,6 +142,7 @@ entries:
           strategic goals.
         documents:
           - devops-engineer
+          - sre
           - cv
       - description: |
           \textbf{Organized ``Lunch \& Learn'' sessions} averaging approx. 30 participants per event, intermixing guest
@@ -144,6 +158,7 @@ entries:
           and cost management}.
         documents:
           - platform-engineer
+          - sre
           - cv
       - description: |
           \textbf{Architected and implemented hybrid-cloud infrastructure (AWS/VMware)} to support multi-tenant IoT
@@ -166,6 +181,16 @@ entries:
         documents:
           - devops-engineer
           - platform-engineer
+          - sre
+          - cv
+      - description: |
+          \textbf{Organized and moderated a DevSecOps roundtable} with approx. 50 total participants (10 speakers, 40
+          attendees), aligning strategic research from the US Department of Defense \textbf{(DoD)}, National Institute
+          of Standards and Technology \textbf{(NIST)}, Center for Internet Security \textbf{(CIS)}, and \textbf{CMU-SEI}
+          with the organization's high-regulation environment and ISO 9001 requirements, \textbf{reinforcing shared
+          ownership of quality and security awareness during a period of rapid change.}
+        documents:
+          - sre
           - cv
 
   - title: DevOps Engineer II (IT)
@@ -176,6 +201,7 @@ entries:
       - cv
       - devops-engineer
       - platform-engineer
+      - sre
     experiences:
       - description: |
           \textbf{Oversaw an in-house migration} of digital marketing systems to AWS, performing a comprehensive
@@ -185,6 +211,7 @@ entries:
         documents:
           - devops-engineer
           - platform-engineer
+          - sre
           - cv
       - description: |
           \textbf{Developed custom tools to convert 300+ PlasticSCM repositories to Git}, preserving full
@@ -193,6 +220,7 @@ entries:
         documents:
           - devops-engineer
           - platform-engineer
+          - sre
           - cv
       - description: |
           \textbf{Authored and delivered an on-site Git training curriculum for 30+ engineers}, enhancing collaboration
@@ -200,6 +228,7 @@ entries:
         documents:
           - devops-engineer
           - platform-engineer
+          - sre
           - cv
       - description: |
           \textbf{Owned the DevOps platform during two business-unit divestitures}, leveraging Infrastructure as Code
@@ -209,6 +238,7 @@ entries:
         documents:
           - devops-engineer
           - platform-engineer
+          - sre
           - cv
 
   - title: DevOps Engineer I (IT)
@@ -219,6 +249,7 @@ entries:
       - cv
       - devops-engineer
       - platform-engineer
+      - sre
     experiences:
       - description: |
           \textbf{Transformed an undocumented legacy DevOps ecosystem} into a centralized platform
@@ -228,6 +259,7 @@ entries:
         documents:
           - devops-engineer
           - platform-engineer
+          - sre
           - cv
       - description: |
           \textbf{Expanded DevOps systems to support 100+ newly acquired staff}, migrating data from Jira, SVN,
@@ -236,6 +268,7 @@ entries:
         documents:
           - devops-engineer
           - platform-engineer
+          - sre
           - cv
       - description: |
           \textbf{Engineered containerized DevOps environments} (Docker, Packer, Terraform, Rancher) to
@@ -244,6 +277,7 @@ entries:
         documents:
           - devops-engineer
           - platform-engineer
+          - sre
           - cv
       - description: |
           \textbf{Engineered cached Android BSP pipelines} (Docker, BTRFS, Jenkins) following extensive
@@ -253,6 +287,7 @@ entries:
         documents:
           - devops-engineer
           - platform-engineer
+          - sre
           - cv
 
   - title: AWS Systems Administrator
@@ -263,6 +298,7 @@ entries:
       - cv
       - devops-engineer
       - platform-engineer
+      - sre
     experiences:
       - description: |
           \textbf{Architected and scaled a secure, multi-tier AWS infrastructure} (EC2, RDS, ELB, S3, CloudFront)
@@ -274,6 +310,7 @@ entries:
         documents:
           - platform-engineer
           - devops-engineer
+          - sre
           - cv
       - description: |
           \textbf{Diagnosed and resolved critical MySQL NDB Cluster CGE crashes} (SEGFAULTS) by analyzing core dumps to
@@ -282,6 +319,7 @@ entries:
         documents:
           - devops-engineer
           - platform-engineer
+          - sre
           - cv
       - description: |
           \textbf{Streamlined infrastructure management} by migrating from Chef/RightScale to CloudFormation/Puppet,
@@ -289,6 +327,7 @@ entries:
         documents:
           - platform-engineer
           - devops-engineer
+          - sre
           - cv
       - description: |
           \textbf{Evangelized Docker for local development}, standardizing tooling across a 30-person team and
@@ -296,4 +335,10 @@ entries:
         documents:
           - devops-engineer
           - platform-engineer
+          - cv
+      - description: |
+          \textbf{Led incident response planning and runbook creation}, ensuring swift detection, root cause analysis,
+          and mitigation of high-impact regulatory compliance incidents around \textbf{HIPAA/HITECH/PCI-DSS}.
+        documents:
+          - sre
           - cv
