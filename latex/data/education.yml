@@ -1,0 +1,21 @@
+education:
+  - title: "Coursework Towards: B.S. Electrical Engineering, B.S. Computer Science; Left for Career Opportunities"
+    institution: The University of Akron --- Honors College
+    location: Akron, Ohio
+    date: 2011 --- 2015
+    documents:
+      - devops-engineer
+      - cv
+    experiences:
+      - description: |
+          President's List (4.0 GPA) --- 5 semesters
+        documents:
+          - devops-engineer
+          - cv
+  - title: Honors Diploma
+    institution: Kenmore High School
+    location: Akron, Ohio
+    date: 2013
+    documents:
+      - devops-engineer
+      - cv

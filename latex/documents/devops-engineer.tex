@@ -32,13 +32,15 @@
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
+% Prevent hyphenation
+\usepackage[none]{hyphenat}
 
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
 \name{Jaremy A.}{Hatler}
-\position{DevSecOps Engineer{\enskip\cdotp\enskip}Platform Engineer{\enskip\cdotp\enskip}Site Reliability Engineer{\enskip\cdotp\enskip}Cloud Solutions Architect}
+\position{DevOps Engineer{\enskip\cdotp\enskip}US Citizen{\enskip\cdotp\enskip}Eligible for Security Clearance}
 \address{967 Idaho Ave, Akron, Ohio, 44314, United States}
 
 \mobile{(+1) 234-255-2438}
@@ -47,7 +49,7 @@
 \resume{resume.jhatler.com/devops}
 \cv{cv.jhatler.com}
 
-\quote{``DevOps is not a goal, but a never-ending process of continual improvement." -- Jez Humble}
+\quote{``DevOps is not a goal, but a never-ending process of continual improvement.'' --- Jez Humble}
 
 
 %-------------------------------------------------------------------------------
@@ -61,7 +63,7 @@
 % Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
-  {Jaremy A. Hatler~~~·~~~Résumé}
+  {Résumé~~~·~~~Jaremy A. Hatler~~~·~~~Eligible for US Security Clearance}
   {\thepage}
 
 
@@ -69,10 +71,10 @@
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-%\input{devops-engineer/summary.tex}
-\input{devops-engineer/skills.tex}
-\input{devops-engineer/experience.tex}
-\input{devops-engineer/education.tex}
+\input{../summary/devops-engineer.tex}
+\input{../experience/devops-engineer.tex}
+\input{../skills/devops-engineer.tex}
+\input{../education/devops-engineer.tex}
 
 
 %-------------------------------------------------------------------------------

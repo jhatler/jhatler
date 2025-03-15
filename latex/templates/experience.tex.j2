@@ -1,0 +1,23 @@
+\cvsection{Experience}
+
+{%- for entry in data.entries %}
+{%- if data.document.name in entry.documents %}
+\begin{cventries}
+    \cventry
+        { {{ entry.title }} }
+        { {{ entry.company }} }
+        { {{ entry.location }} }
+        { {{ entry.date }} }
+        {
+            \begin{cvitems}
+        {%- for experience in entry.experiences %}
+            {%- if data.document.name in experience.documents %}
+                \item{ {{- experience.description.replace('\n', ' ').strip() -}} }
+            {%- endif %}
+        {%- endfor %}
+            \end{cvitems}
+        }
+\end{cventries}
+{%- endif %}
+{%- endfor %}
+

@@ -1,0 +1,35 @@
+{%- set categories_for_document = [] %}
+{%- for category in data.categories %}
+  {%- for doc in category.documents %}
+    {%- if doc.name == data.document.name %}
+      {%- set _ = categories_for_document.append({'category': category, 'sort': doc.sort}) %}
+    {%- endif %}
+  {%- endfor %}
+{%- endfor -%}
+
+\cvsection{Skills}
+\begin{cvskills}
+
+{%- for item in categories_for_document|sort(attribute='sort') %}
+  {%- set relevant_skills = [] %}
+  {%- for skill in item.category.skills %}
+    {%- set doc_for_skill = skill.documents | selectattr("name","equalto",data.document.name) | list %}
+    {%- if doc_for_skill|length > 0 %}
+      {%- set _ = relevant_skills.append({'name': skill.name, 'sort': doc_for_skill[0].sort}) %}
+    {%- endif %}
+  {%- endfor %}
+  {%- set sorted_skills = relevant_skills|sort(attribute='sort') %}
+    \cvskill
+        { {{ item.category.name }} }
+        {
+      {%- for s in sorted_skills %}
+        {%- if not loop.last %}
+          {{ s.name }},
+        {%- else %}
+          {{ s.name }}
+        {%- endif %}
+      {%- endfor %}
+        }
+{%- endfor %}
+
+\end{cvskills}
