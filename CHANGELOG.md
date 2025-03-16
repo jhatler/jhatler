@@ -1,5 +1,23 @@
 # JHatler Root Changelog
 
+## [0.0.14](https://github.com/jhatler/jhatler/compare/jhatler-v0.0.13...jhatler-v0.0.14) (2025-03-16)
+
+
+### Features
+
+* Add geek code to README ([#184](https://github.com/jhatler/jhatler/issues/184)) ([d2cd3de](https://github.com/jhatler/jhatler/commit/d2cd3de0728c31f49ec385a62e2d598958a60976)), closes [#181](https://github.com/jhatler/jhatler/issues/181)
+* Add links to README for Resumes/CV/Project ([#183](https://github.com/jhatler/jhatler/issues/183)) ([64350e0](https://github.com/jhatler/jhatler/commit/64350e0db02825fa1dc80216dc5104940a668fe9)), closes [#14](https://github.com/jhatler/jhatler/issues/14)
+* Add Platform Engineer resume ([#177](https://github.com/jhatler/jhatler/issues/177)) ([b9d457c](https://github.com/jhatler/jhatler/commit/b9d457cbca6fb999a2d7a9bc1a2d750933886def)), closes [#148](https://github.com/jhatler/jhatler/issues/148)
+* Add rudimentary DevOps Engineer resume ([#165](https://github.com/jhatler/jhatler/issues/165)) ([079d399](https://github.com/jhatler/jhatler/commit/079d39913ebb066c2bcdd1a4cde5ef3b1e47d830)), closes [#144](https://github.com/jhatler/jhatler/issues/144)
+* Add Security Engineer resume ([#179](https://github.com/jhatler/jhatler/issues/179)) ([26a10da](https://github.com/jhatler/jhatler/commit/26a10daad884c8e8876f10ff5489a3efb8d154c9)), closes [#146](https://github.com/jhatler/jhatler/issues/146)
+* Add Site Reliability Engineer resume ([#178](https://github.com/jhatler/jhatler/issues/178)) ([416d62e](https://github.com/jhatler/jhatler/commit/416d62e000a91611816be1493629ab07c2a255bf)), closes [#147](https://github.com/jhatler/jhatler/issues/147)
+* Add Solutions Architect resume ([#180](https://github.com/jhatler/jhatler/issues/180)) ([31c02b7](https://github.com/jhatler/jhatler/commit/31c02b73d9fd96e13628927367d0431952287217)), closes [#145](https://github.com/jhatler/jhatler/issues/145)
+
+
+### Bug Fixes
+
+* Typo in security engineer, PDF updates ([#185](https://github.com/jhatler/jhatler/issues/185)) ([881061f](https://github.com/jhatler/jhatler/commit/881061f18b43bb59bb0ac7ba5acc1da818789662)), closes [#182](https://github.com/jhatler/jhatler/issues/182)
+
 ## [0.0.13](https://github.com/jhatler/jhatler/compare/jhatler-v0.0.12...jhatler-v0.0.13) (2025-03-03)
 
 
