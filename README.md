@@ -58,3 +58,18 @@ subset of the information my CV, which is a comprehensive overview of my experie
 - [Resume - Site Reliability Engineer](https://resume.jhatler.com/sre)
 - [Resume - Security Engineer](https://resume.jhatler.com/security)
 - [Resume - Solutions Architect](https://resume.jhatler.com/architect)
+
+## Geek Code
+
+An oldie but a goldie, the Geek Code is a way to express your interests and skills in a compact format. Here's mine:
+
+```
+----- BEGIN GEEK CODE VERSION 6.0 -----
+GDVO$/GIT$/GCS/GAI/GM/GP A+ B-:++:_:+:+ C? D+:+ CM++++$ MW+++$
+UL++++$ MC++$ Lasm+/Lbash+++/LC+/LCpp+/LC#/Lgo+(-)/LGPT++/Ljs+/
+Llll-(+)/LP--(+)/Lphp++(-)/Lpy+++/LRu+++/Lsql+@/Lvb/Lwps+>++
+IO+++:--- PGP++++ G:jhatler E++ H+ PS+ PE TLOTR+/TSG1+/TSGa+@/
+TST+/TSTng+++/TSTds9+++/TSTv+++/TSTe++(-)/TSTdsc+++/TSTpic++/
+TSTld+/TSTsnw+++/TSW+ RPG BK- KD+/KX+++ ENFJ-T R+++
+----- END GEEK CODE VERSION 6.0 -----
+```
