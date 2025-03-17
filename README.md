@@ -26,21 +26,11 @@ consider it to be untrusted and reach out to me directly to verify its authentic
 
 ## Projects
 
-- **[JANUS](https://github.com/jhatler/janus):** Internal Development Platform (IDP) targeting complex multi‑cloud environments like AI/ML workloads, IoT Device Management, OS distribution
+- **[JANUS](https://github.com/jhatler/janus):** Internal Development Platform (IDP) targeting
+  complex multi-cloud environments like AI/ML workloads, IoT Device Management, OS distribution
   and support, etc.
-  - Core Tech:
-    - Spacelift
-    - Ansible
-    - Terraform
-    - Packer
-    - Docker
-    - Devcontainers
-    - GitHub Actions/Codespaces
-    - Aikido
-    - Codacy
-    - Infracost
   - Supports Ubuntu 8.04.4 and up to aid in migration of legacy systems to modern platforms.
-- In my pins, you'll find various repos related to my Gentoo use, including a few overlays.
+- In my pins, you'll find various repositories related to my Gentoo use, including a few overlays.
   These are unpolished at the moment, but I'm in the process of incorporating a large amount
   of out-of-band work I've done to produce a full-fledged, security-focused Linux distribution.
   It's my daily driver but hic sunt dracones until I get the infrastructure in place to support
@@ -50,7 +40,7 @@ consider it to be untrusted and reach out to me directly to verify its authentic
 
 If you're interested in my work history, you can find my resumes and CVs below. They're LaTeX based, rendered
 to PDFs dynamically based on the data in this repository. The resumes are targeted towards specific roles and are a
-subset of the information my CV, which is a comprehensive overview of my experiences and skills.
+subset of the information in my CV, which is a comprehensive overview of my experiences and skills.
 
 - [CV](https://cv.jhatler.com/)
 - [Resume - DevOps Engineer](https://resume.jhatler.com/devops)
@@ -63,7 +53,7 @@ subset of the information my CV, which is a comprehensive overview of my experie
 
 An oldie but a goldie, the Geek Code is a way to express your interests and skills in a compact format. Here's mine:
 
-```
+```text
 ----- BEGIN GEEK CODE VERSION 6.0 -----
 GDVO$/GIT$/GCS/GAI/GM/GP A+ B-:++:_:+:+ C? D+:+ CM++++$ MW+++$
 UL++++$ MC++$ Lasm+/Lbash+++/LC+/LCpp+/LC#/Lgo+(-)/LGPT++/Ljs+/
