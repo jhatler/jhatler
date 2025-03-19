@@ -26,6 +26,10 @@ consider it to be untrusted and reach out to me directly to verify its authentic
 
 ## Projects
 
+- **[Knowledge Base](https://github.com/jhatler/knowledge-base):**
+  A collection of conceptual models/frameworks, articles, videos, and other resources that
+  I've found useful in my journey. It's a perpetual work in progress, but I hope it can help
+  others as well. If you have suggestions for additions, issues or PRs are always cherished!
 - **[JANUS](https://github.com/jhatler/janus):** Internal Development Platform (IDP) targeting
   complex multi-cloud environments like AI/ML workloads, IoT Device Management, OS distribution
   and support, etc.
