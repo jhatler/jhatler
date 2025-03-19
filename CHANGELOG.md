@@ -1,5 +1,17 @@
 # JHatler Root Changelog
 
+## [0.0.15](https://github.com/jhatler/jhatler/compare/jhatler-v0.0.14...jhatler-v0.0.15) (2025-03-19)
+
+
+### Features
+
+* Add link to personal knowledge base ([#190](https://github.com/jhatler/jhatler/issues/190)) ([be729c7](https://github.com/jhatler/jhatler/commit/be729c76be86a6c9c6b8735e379e3cc2f24a0680)), closes [#189](https://github.com/jhatler/jhatler/issues/189)
+
+
+### Bug Fixes
+
+* Remove core tech from README ([#187](https://github.com/jhatler/jhatler/issues/187)) ([e45aa99](https://github.com/jhatler/jhatler/commit/e45aa99baaa15080a4b8a1e7c8b6809ec0ad734a)), closes [#186](https://github.com/jhatler/jhatler/issues/186)
+
 ## [0.0.14](https://github.com/jhatler/jhatler/compare/jhatler-v0.0.13...jhatler-v0.0.14) (2025-03-16)
 
 
