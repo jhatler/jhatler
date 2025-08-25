@@ -48,6 +48,6 @@ jobs:
         run: cat .github/super-linter.env >> "$GITHUB_ENV"
 
       - name: Lint Codebase
-        uses: super-linter/super-linter/slim@v7.3.0
+        uses: super-linter/super-linter/slim@v8.1.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
